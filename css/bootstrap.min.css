@@ -24,7 +24,7 @@
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
-    --bs-light: #E8F5E9;
+    --bs-light: #ebe8f5;
     --bs-dark: #0F4229;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -84,7 +84,7 @@ h6,
     font-family: "Jost", sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    color: #0F4229
+    color: #0f2742
 }
 
 h1,
@@ -2262,7 +2262,7 @@ progress {
     background-color: #fff;
     border-color: #9ac79c;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(52, 142, 56, 0.25)
+    box-shadow: 0 0 0 .25rem #205295
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2439,7 +2439,7 @@ textarea.form-control-lg {
 .form-select:focus {
     border-color: #9d9ac7;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(52, 142, 56, 0.25)
+    box-shadow: 0 0 0 .25rem #205295
 }
 
 .form-select[multiple],
@@ -2512,7 +2512,7 @@ textarea.form-control-lg {
 .form-check-input:focus {
     border-color: #9ac79c;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(52, 142, 56, 0.25)
+    box-shadow: 0 0 0 .25rem #205295
 }
 
 .form-check-input:checked {
@@ -2604,11 +2604,11 @@ textarea.form-control-lg {
 }
 
 .form-range:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem rgba(52, 142, 56, 0.25)
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem #205295
 }
 
 .form-range:focus::-moz-range-thumb {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem rgba(52, 142, 56, 0.25)
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem #205295
 }
 
 .form-range::-moz-focus-outer {
@@ -2876,7 +2876,7 @@ textarea.form-control-lg {
 .was-validated .form-control:valid:focus,
 .form-control.is-valid:focus {
     border-color: #144272;
-    box-shadow: 0 0 0 .25rem rgba(25, 135, 84, 0.25)
+    box-shadow: 0 0 0 .25rem #205295
 }
 
 .was-validated textarea.form-control:valid,
@@ -2903,7 +2903,7 @@ textarea.form-control.is-valid {
 .was-validated .form-select:valid:focus,
 .form-select.is-valid:focus {
     border-color: #144272;
-    box-shadow: 0 0 0 .25rem rgba(25, 135, 84, 0.25)
+    box-shadow: 0 0 0 .25rem #205295
 }
 
 .was-validated .form-check-input:valid,
@@ -3187,7 +3187,7 @@ fieldset:disabled .btn {
     color: #fff;
     background-color: #144272;
     border-color: #486e99;
-    box-shadow: 0 0 0 .25rem rgba(60, 153, 110, 0.5)
+    box-shadow: 0 0 0 .25rem rgba(60, 85, 153, 0.5)
 }
 
 .btn-check:checked+.btn-success,
@@ -3533,7 +3533,7 @@ fieldset:disabled .btn {
 
 .btn-check:focus+.btn-outline-success,
 .btn-outline-success:focus {
-    box-shadow: 0 0 0 .25rem rgba(25, 135, 84, 0.5)
+    box-shadow: 0 0 0 .25rem rgba(25, 100, 135, 0.5)
 }
 
 .btn-check:checked+.btn-outline-success,
@@ -3551,7 +3551,7 @@ fieldset:disabled .btn {
 .btn-outline-success:active:focus,
 .btn-outline-success.active:focus,
 .btn-outline-success.dropdown-toggle.show:focus {
-    box-shadow: 0 0 0 .25rem rgba(25, 135, 84, 0.5)
+    box-shadow: 0 0 0 .25rem rgba(25, 104, 135, 0.5)
 }
 
 .btn-outline-success:disabled,
@@ -3681,7 +3681,7 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-light {
-    color: #E8F5E9;
+    color: #e8eaf5;
     border-color: #E8F5E9
 }
 
@@ -7171,15 +7171,15 @@ fieldset:disabled .btn {
 }
 
 .shadow {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important
+    box-shadow: 0 0.5rem 1rem rgba(95, 124, 219, 0.507) !important
 }
 
 .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important
+    box-shadow: 0 0.125rem 0.25rem rgba(95, 124, 219, 0.507) !important
 }
 
 .shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important
+    box-shadow: 0 1rem 3rem rgba(95, 124, 219, 0.507) !important
 }
 
 .shadow-none {
@@ -7331,7 +7331,7 @@ fieldset:disabled .btn {
 }
 
 .border-light {
-    border-color: #E8F5E9 !important
+    border-color: #e9e8f5 !important
 }
 
 .border-dark {
@@ -8308,7 +8308,7 @@ fieldset:disabled .btn {
 }
 
 .text-light {
-    color: #E8F5E9 !important
+    color: #e9e8f5 !important
 }
 
 .text-dark {
@@ -8364,11 +8364,11 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-    background-color: #E8F5E9 !important
+    background-color: #e9e8f5 !important
 }
 
 .bg-dark {
-    background-color: #0F4229 !important
+    background-color: #0f3042 !important
 }
 
 .bg-body {

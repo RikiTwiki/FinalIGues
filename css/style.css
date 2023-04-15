@@ -4,9 +4,9 @@ body {
 }
 
 :root {
-    --primary: #0A2647;
+    --primary: #497bb4;
     --secondary: #526860;
-    --light: #E8F5E9;
+    --light: #e8eaf5;
     --dark: #0F4229;
 }
 
@@ -67,6 +67,11 @@ h6,
 .btn-primary,
 .btn-outline-primary:hover {
     color: var(--light);
+}
+
+.btn-primary:hover {
+    color: #144272;
+    background-color: white;
 }
 
 .btn-square {
@@ -268,7 +273,7 @@ h6,
 
 .service-item .service-text {
     background: #FFFFFF;
-    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 45px rgba(95, 124, 219, 0.507);
     transition: .3s;
 }
 

@@ -1,1 +1,0 @@
-# cap-hss-design
