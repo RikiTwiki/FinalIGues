@@ -40,6 +40,32 @@
     <!-- Spinner End -->
 
 
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <!-- <span class="fa fa-phone-alt me-2"></span> -->
+                    <!-- <span>+012 345 6789</span> -->
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <!-- <span class="far fa-envelope me-2"></span> -->
+                    <!-- <span>info@example.com</span> -->
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Подписывайтесь на нас:</span>
+                    <a class="btn btn-link text-light" href="https://www.facebook.com/HannsSeidelStiftungZentralasien/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://twitter.com/hsfoundationca"><i class="fab fa-twitter"></i></a>
+                    <!-- <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                    <a class="btn btn-link text-light" href="https://www.instagram.com/hanns_seidel_foundation_ca/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -50,11 +76,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Главная</a>
+                <a href="index.html" class="nav-item nav-link">Главная</a>
                 <a href="about.html" class="nav-item nav-link">Новости</a>
                 <a href="service.html" class="nav-item nav-link">Тренинги</a>
                 <a href="project.html" class="nav-item nav-link">Стипендиальные Программы</a>
-                <a href="QA.html" class="nav-item nav-link">Вопросы и Ответы</a>
+                <a href="QA.html" class="nav-item nav-link active">Вопросы и Ответы</a>
                 <a href="contact.html" class="nav-item nav-link">Контакты</a>
                 <a href="info.html" class="nav-item nav-link">Информация Для Выпускников</a>
                 <!-- <div class="nav-item dropdown">
@@ -94,87 +120,185 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+                <p class="fs-5 fw-bold text-primary">Часто задаваемые вопросы</p>
+                <h1 class="display-5 mb-5">Вопросы и ответы</h1>
             </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Landscaping</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+<!--            <div class="row wow fadeInUp" data-wow-delay="0.3s">-->
+<!--                <div class="col-12 text-center">-->
+<!--                    <ul class="list-inline rounded mb-5" id="portfolio-flters">-->
+<!--                        <li class="mx-2 active" data-filter="*">All</li>-->
+<!--                        <li class="mx-2" data-filter=".first">Complete Projects</li>-->
+<!--                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row g-4 portfolio-container">-->
+<!--                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">-->
+<!--                    <div class="portfolio-inner rounded">-->
+<!--                        <img class="img-fluid" src="img/service-1.jpg" alt="">-->
+<!--                        <div class="portfolio-text">-->
+<!--                            <h4 class="text-white mb-4">Landscaping</h4>-->
+<!--                            <div class="d-flex">-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">-->
+<!--                    <div class="portfolio-inner rounded">-->
+<!--                        <img class="img-fluid" src="img/service-2.jpg" alt="">-->
+<!--                        <div class="portfolio-text">-->
+<!--                            <h4 class="text-white mb-4">Pruning plants</h4>-->
+<!--                            <div class="d-flex">-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">-->
+<!--                    <div class="portfolio-inner rounded">-->
+<!--                        <img class="img-fluid" src="img/service-3.jpg" alt="">-->
+<!--                        <div class="portfolio-text">-->
+<!--                            <h4 class="text-white mb-4">Irrigation & Drainage</h4>-->
+<!--                            <div class="d-flex">-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">-->
+<!--                    <div class="portfolio-inner rounded">-->
+<!--                        <img class="img-fluid" src="img/service-4.jpg" alt="">-->
+<!--                        <div class="portfolio-text">-->
+<!--                            <h4 class="text-white mb-4">Garden Maintenance</h4>-->
+<!--                            <div class="d-flex">-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">-->
+<!--                    <div class="portfolio-inner rounded">-->
+<!--                        <img class="img-fluid" src="img/service-5.jpg" alt="">-->
+<!--                        <div class="portfolio-text">-->
+<!--                            <h4 class="text-white mb-4">Green Technology</h4>-->
+<!--                            <div class="d-flex">-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">-->
+<!--                    <div class="portfolio-inner rounded">-->
+<!--                        <img class="img-fluid" src="img/service-6.jpg" alt="">-->
+<!--                        <div class="portfolio-text">-->
+<!--                            <h4 class="text-white mb-4">Urban Gardening</h4>-->
+<!--                            <div class="d-flex">-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>-->
+<!--                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="row">
+                <div class="container">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Как айыл окмоту создать акционерное общество?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>ВОПРОС:
+
+                                    В одном айыльном округе, в одном из его сел имеется старое здание еще с советских времен недостроенной школы с земельным участком 3,2 га примерно. По этому поводу на землю имеется Госакт о праве бессрочного пользования земельным участком о том, что данная собственность является муниципальной собственностью айыльного округа (целевое назначение участка “социальное”).
+                                    Есть инвесторы, граждане из местных жителей, а также иностранные инвесторы, которые готовы вложиться и организовать на территории данной простаивающей земли и недвижимости комбинат или завод по переработке мяса и производства консервной продукции.
+
+
+                                    То есть тут стоит вопрос эффективного использования муниципальной собственности.
+
+
+
+                                    Согласно п.1 ст.10 Закона КР “Об акционерных обществах”: “Правительство и органы местного самоуправления могут учреждать или выступать в качестве соучредителей общества или приобретать акции и быть акционерами общества”.
+                                    Согласно п2. Ст.28 того же закона: “Оплата акций и иных ценных бумаг общества может осуществляться деньгами, ценными бумагами, другими вещами или имущественными правами, либо иными правами, имеющими денежную оценку. Форма оплаты акций общества при его учреждении определяется учредительным договором или уставом общества.
+
+
+
+                                    В этой связи айыл окмоту хочет создать акционерное общество, внести в качестве своей доли в уставный капитал имущественное право муниципальной собственности на землю и недостроенное здание школы (предварительно изменив целевое назначение земельного участка на “промышленное”) и таким образом став акционером и владельцем акций предприятия в дальнейшем получать прибыль в соответствии с долей в уставном капитале.
+
+
+
+                                    Затем предприятие планируется расширять, выпуская новые акции, которые могут приобрести отечественные инвесторы из жителей местного сообщества. Таким образом, они будут напрямую заинтересованы в дальнейшем развитии данного предприятия имея свою долю и выгоду.
+
+
+
+                                    По поводу вышесказанного хотелось бы получить мнение эксперта. Законодательно как мы видим такая возможность имеется, однако на практике по-моему нет примеров создания айыл окмоту своих акционерных обществ, либо когда они выступали бы соучредителями. Оно и понятно, руководители многих органов МСУ пассивны, да и просто боятся выступать с подобного рода инициативами боясь возможной ответственности за подобные действия.
+
+
+
+                                    Как можно реализовать эту возможность?
+
+
+
+                                    ОТВЕТ:
+
+                                    Прежде всего необходимо определить собственника объекта незавершенного строительства. Маловероятно, что орган МСУ имеет документы, подтверждающие право собственности на данный объект. В соответствии с Правилами государственной регистрации прав и обременений (ограничений) прав на недвижимое имущество и сделок с ним, утвержденным постановлением Правительства КР, №49, от 15 февраля 2011 года, необходимо объект незавершенного строительства зарегистрировать в органах Госрегистра.
+
+                                    При этом необходимо иметь в виду, что процедура управления объектом незавершенного строительства в настоящее время полностью не отрегулирована[1]. Поэтому возможно, что со стороны Госрегистра будут сложности при проведении регистрации. Без наличия права собственности на основании п. 3 ст. 7 Закона Кыргызской Республики «О государственной регистрации прав на недвижимое имущество и сделок с ним», отсутствие государственной регистрации прав, вытекающих из сделки, влечет ее недействительность. Такая сделка считается ничтожной, а право – недействительным. Таким образом передача незавершенного объекта строительства в качестве оплаты акций от имени органа МСУ будет признана недействительной.
+
+
+
+                                    В судебной практике Кыргызской Республики были случаи, когда незавершенный объект недвижимости рассматривался как оцененный объем строительных материалов[2]. В этом случае, по решению суда орган МСУ может принять эти материалы в собственность, поставить на баланс и использовать в качестве оплаты за акции.
+
+
+
+                                    В то же время рекомендуется данное решение согласовать с Фондом государственного имущества КР. Так как объект незавершенного строительства может иметь отношение к государственной собственности, и передача его в муниципальную собственность может быть признана недействительной.
+
+                                    В случае, если орган МСУ не получил право собственности на незавершенный объект, то возникает вопрос, как собственник земельного участка может им распоряжаться? Норма ст. 233-9 Гражданского кодекса Кыргызской Республики определяет, что при прекращении права пользования земельным участком, права на недвижимость, оставленную ее собственником на земельном участке, определяются в соответствии с договором между собственником участка и собственником соответствующего недвижимого имущества. Но при отсутствии такого соглашения, собственник земельного участка вправе требовать по суду, чтобы собственник недвижимости после прекращения права пользования земельным участком освободил его от недвижимости и привел участок в первоначальное состояние. Таким образом речь идет о праве органа МСУ подать в суд на Фонд государственного имущества с требованием осуществить снос незавершенного здания и привести участок в первоначальное состояние. Суд может, с учетом оснований прекращения права пользования земельным участком и при предъявлении соответствующих требований сторонами установить условия пользования земельным участком собственником недвижимости на новый срок. Однако суд может и не установить условия пользования земельным участком собственником недвижимости на новый срок, что повлечет освобождение данного земельного участка от недвижимости.
+
+
+
+                                    Дополнительно для информации сообщаем, что орган МСУ имеет право участвовать в акционерных обществах с целью обеспечения эффективного и оперативного решения вопросов местного значения, а также стимулирования экономического развития в пределах своей территории.
+
+
+
+                                    В случае, если право муниципальной собственности на объект незавершенного строительства будет подтверждено решением суда, то для дальнейших действий необходимо изменить целевое назначение земельного участка. Процедура изменения целевого назначения определяется статьей 12 Земельного Кодекса КР.
+
+                                    Статья 12. Установление и изменение целевого назначения земель
+
+                                    Установление целевого использования земель производится специально уполномоченным государственным органом при предоставлении земельного участка в собственность или в пользование.
+                                    Изменение целевого назначения земель производится тем же органом с внесением соответствующих изменений в документы, удостоверяющие права на земельный участок.
+                                    Использование земельного участка не по целевому назначению не допускается, за исключением случаев предоставления земельных участков недропользователю для разработки полезных ископаемых и строительства объектов инфраструктуры, а также оператору электросвязи для строительства или установки сооружений связи.
+                                    [1] Объекты незавершенного строительства в системе объектов гражданских прав по законодательству Кыргызской Республики. В.А. Фудашкин. Кыргызско-Российский славянский университет
+
+                                    [2] См. там же.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Pruning plants</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        <div class="accordion-item">
+                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Irrigation & Drainage</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        <div class="accordion-item">
+                            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Garden Maintenance</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        <div class="accordion-item">
+                            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Green Technology</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Urban Gardening</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        <div class="accordion-item">
+                            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
                             </div>
                         </div>
                     </div>
@@ -234,6 +358,16 @@
                         <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Ваш email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Отправить</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 mb-md-0">
+                    <a class="border-bottom" href="#"></a>© 2023 Фонд Ханнса Зайделя. Все права защищены.
                 </div>
             </div>
         </div>
