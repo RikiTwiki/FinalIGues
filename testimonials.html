@@ -30,6 +30,18 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        .dropdown-item{
+            transition: 0.9s;
+        }
+
+        .dropdown-item:hover{
+            color: #497bb4;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -76,7 +88,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Главная</a>
+                <a href="index.html" class="nav-item nav-link">Главная</a>
                 <a href="about.html" class="nav-item nav-link">Новости</a>
                 <a href="service.html" class="nav-item nav-link">Тренинги</a>
                 <a href="project.html" class="nav-item nav-link">Стипендиальные Программы</a>
@@ -90,10 +102,10 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">О Нас</a>
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">О Нас</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="team.html" class="dropdown-item">Наша Команда</a>
-                        <a href="testimonial.html" class="dropdown-item active">Отзызы</a>
+                        <a href="testimonials.html" class="dropdown-item active">Отзызы</a>
                         <a href="contact.html" class="dropdown-item nav-item">Контакты</a>
                     </div>
                 </div>
@@ -119,12 +131,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Testimonial</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Testimonials</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Testimonial</li>
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="about.html">Новости</a></li>
+                    <!-- <li class="breadcrumb-item active" aria-current="page">Testimonial</li> -->
                 </ol>
             </nav>
         </div>

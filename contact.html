@@ -34,6 +34,14 @@
 
 
     <style>
+        .dropdown-item{
+            transition: 0.9s;
+        }
+
+        .dropdown-item:hover{
+            color: #497bb4;
+        }
+
         @media (max-width: 991px) {
                 .navbar-collapse {
                     background-color: white;
@@ -87,7 +95,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Главная</a>
+                <a href="index.html" class="nav-item nav-link">Главная</a>
                 <a href="about.html" class="nav-item nav-link">Новости</a>
                 <a href="service.html" class="nav-item nav-link">Тренинги</a>
                 <a href="project.html" class="nav-item nav-link">Стипендиальные Программы</a>
@@ -101,10 +109,10 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">О Нас</a>
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">О Нас</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="team.html" class="dropdown-item">Наша Команда</a>
-                        <a href="testimonial.html" class="dropdown-item">Отзызы</a>
+                        <a href="testimonials.html" class="dropdown-item">Отзызы</a>
                         <a href="contact.html" class="dropdown-item nav-item active">Контакты</a>
                     </div>
                 </div>
