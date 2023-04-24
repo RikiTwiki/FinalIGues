@@ -251,6 +251,11 @@ h6,
     position: relative;
 }
 
+.dop-info {
+    position:absolute;
+    bottom: 22px;
+}
+
 .service-item .service-img {
     position: absolute;
     width: 100%;
@@ -288,12 +293,12 @@ h6,
     background: rgba(15, 20, 66, 0.6);
 }
 
-.service-item .service-text h4,
+.service-item .service-text h5,
 .service-item .service-text p {
     transition: .3;
 }
 
-.service-item:hover .service-text h4 {
+.service-item:hover .service-text h5 {
     color: #FFFFFF;
 }
 
