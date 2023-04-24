@@ -642,3 +642,30 @@ h6,
 .instagram{
     background: #C13584;
 }
+
+
+.text-gray {
+    color: #888
+}
+
+.presentation__date {
+    font-size: 12px;
+}
+
+.border-left {
+    display: flex;
+    align-items: center;
+}
+
+.presentation__tag {
+    font-size: 14px;
+}
+
+.border-left::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 70%;
+    margin: 0 7px;
+    background-color: #888;
+}
