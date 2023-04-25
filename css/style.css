@@ -306,6 +306,14 @@ h6,
     color: var(--light);
 }
 
+.service-text h4 {
+    color: var(--dark);
+}
+
+.service-item:hover .service-text h4 {
+    color: var(--light);
+}
+
 .service-item .service-text .btn-square {
     width: 100px;
     height: 100px;
