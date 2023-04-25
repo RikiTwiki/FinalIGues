@@ -677,3 +677,9 @@ h6,
     margin: 0 7px;
     background-color: #888;
 }
+
+
+.now-shadow:hover{
+    box-shadow: 0 0 45px rgba(0,0,0,.08);
+    transition-duration: 1s;
+}
