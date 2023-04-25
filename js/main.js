@@ -59,6 +59,28 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
+    //active for kazakhstan
+    document.addEventListener("DOMContentLoaded", function () {
+        const kazakhstanSection = document.getElementById("kazakhstan-section");
+    
+        if (window.location.pathname === "/home/sanarip03/FckedUp/academy-kazakhstan.html") {
+          kazakhstanSection.classList.add("active");
+        } else {
+          kazakhstanSection.classList.remove("active");
+        }
+      });
+
+      //active for kyrgyzstan
+      document.addEventListener("DOMContentLoaded", function () {
+        const kyrgyzstanSection = document.getElementById("kyrgyzstan-section");
+    
+        if (window.location.pathname === "/home/sanarip03/FckedUp/academy-kygyzstan.html") {
+          kyrgyzstanSection.classList.add("active");
+        } else {
+          kyrgyzstanSection.classList.remove("active");
+        }
+      });
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
