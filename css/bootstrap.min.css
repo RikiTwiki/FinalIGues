@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-blue: #0d6efd;
+    --bs-blue: #1bb0ce;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -3082,7 +3082,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: #267a8c;
+    background-color: #1bb0ce;
     border-color: #34588e
 }
 
@@ -8288,7 +8288,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #267a8c !important
+    color: #1bb0ce !important
 }
 
 .text-secondary {
@@ -8372,7 +8372,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #267a8c !important
+    background-color: #1bb0ce !important
 }
 
 .bg-body {
