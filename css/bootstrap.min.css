@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-blue: #1bb0ce;
+    --bs-blue: #0099d4;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -84,7 +84,7 @@ h6,
     font-family: "Jost", sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    color: #1bb0ce
+    color: #0099d4
 }
 
 h1,
@@ -3082,7 +3082,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: #1bb0ce;
+    background-color: #0099d4;
     border-color: #34588e
 }
 
@@ -3106,8 +3106,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: white;
-    background-color: #1bb0ce;
-    border-color: #1bb0ce;
+    background-color: #0099d4;
+    border-color: #0099d4;
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -8288,7 +8288,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #1bb0ce !important
+    color: #0099d4 !important
 }
 
 .text-secondary {
@@ -8372,7 +8372,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #1bb0ce !important
+    background-color: #0099d4 !important
 }
 
 .bg-body {
