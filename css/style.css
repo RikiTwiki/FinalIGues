@@ -4,7 +4,7 @@ body {
 }
 
 :root {
-    --primary: #0099d4;
+    --primary: white;
     --secondary: #526860;
     --light: #e8eaf5;
     --dark: #000000;
@@ -126,7 +126,7 @@ h6,
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #dc3545;
 }
 
 .navbar .dropdown-toggle::after {
@@ -445,6 +445,12 @@ h6,
     /*opacity: 1;*/
 }
 
+.border-bottom {
+    padding-bottom: 40px;
+    margin-bottom: 43px;
+    border-bottom: #0097d2 solid 2.5px !important;
+}
+
 .team-item .team-social .btn {
     background: var(--light);
     color: var(--primary);
@@ -515,7 +521,7 @@ h6,
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: var(--light);
+    color: white;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
