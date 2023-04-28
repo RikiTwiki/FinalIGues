@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-blue: #0099d4;
+    --bs-blue: #0092d2;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -28,18 +28,18 @@
     --bs-dark: #0F4229;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
     :root {
-        scroll-behavior: smooth
+        scroll-behavior: smooth;
     }
 }
 
@@ -52,7 +52,7 @@ body {
     color: #525368;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 hr {
@@ -60,11 +60,11 @@ hr {
     color: inherit;
     background-color: currentColor;
     border: 0;
-    opacity: .25
+    opacity: .25;
 }
 
 hr:not([size]) {
-    height: 1px
+    height: 1px;
 }
 
 h1,
@@ -84,7 +84,7 @@ h6,
     font-family: "Jost", sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    color: #0099d4
+    color: #0099d4;
 }
 
 h1,
@@ -3082,7 +3082,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: #0099d4;
+    background-color: #0092d3;
     border-color: #34588e
 }
 
@@ -3106,8 +3106,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: white;
-    background-color: #0099d4;
-    border-color: #0099d4;
+    background-color: #0097d2;
+    border-color: #0097d2;
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -8372,7 +8372,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #0099d4 !important
+    background-color: #0097d2 !important
 }
 
 .bg-body {
