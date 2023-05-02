@@ -249,11 +249,16 @@ h6,
 /*** Service ***/
 .service-item {
     position: relative;
+    resize: none;
 }
 
 .dop-info {
     position:absolute;
-    bottom: 22px;
+    bottom: 12px;
+}
+
+.steps {
+    resize: none;
 }
 
 .service-item .service-img {
@@ -286,7 +291,8 @@ h6,
     box-shadow: 0 0 45px rgba(95, 124, 219, 0.507);
     transition: .3s;
     width: 100%;
-    height: 100%;
+    height: 267px;
+    resize: none;
 }
 
 .service-item:hover .service-text {
