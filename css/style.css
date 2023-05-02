@@ -683,3 +683,7 @@ h6,
     box-shadow: 0 0 45px rgba(0,0,0,.08);
     transition-duration: 1s;
 }
+
+.position-relative {
+    width: 25%;
+}
