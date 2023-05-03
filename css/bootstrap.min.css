@@ -3224,7 +3224,7 @@ fieldset:disabled .btn {
 .btn-info:hover {
     color: #000;
     background-color: #31d2f2;
-    border-color: #25cff2
+    border-color: #25cff2;
 }
 
 .btn-check:focus+.btn-info,
