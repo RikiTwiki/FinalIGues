@@ -343,8 +343,8 @@ h6,
     background: var(--light);
 }
 
-.service-item .service-text .btn {
-    width: 40px;
+/* .service-item .service-text .btn {
+    width: 30px;
     height: auto;
     display: inline-flex;
     align-items: center;
@@ -353,7 +353,7 @@ h6,
     white-space: nowrap;
     overflow: hidden;
     transition: .3s;
-}
+} */
 /* .service-item:hover .service-text .btn {
     width: 120px;
 } */
