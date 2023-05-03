@@ -311,6 +311,10 @@ h6,
     background: rgba(15, 20, 66, 0.6);
 }
 
+.service-item .service-text:hover a {
+    color: #FFFFFF;
+}
+
 .service-item .service-text h5,
 .service-item .service-text p {
     transition: .3;

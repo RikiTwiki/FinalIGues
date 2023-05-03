@@ -3063,9 +3063,9 @@ textarea.form-control.is-invalid {
     }
 }
 
-.btn:hover {
-    color: #525368
-}
+/* .btn:hover {
+    color: #ffffff
+} */
 
 .btn-check:focus+.btn,
 .btn:focus {
@@ -3097,7 +3097,7 @@ fieldset:disabled .btn {
     color: #000;
     background-color: #ffffff;
     border-color: #486e99;
-    box-shadow: 0 0 0 .25rem rgb(38, 122, 140)
+    box-shadow: 0 0 0 .25rem rgb(27, 176, 206)
 }
 
 .btn-check:checked+.btn-primary,
@@ -4136,7 +4136,7 @@ fieldset:disabled .btn {
 
 .dropdown-item.active,
 .dropdown-item:active {
-    color: white;
+    color: #1bb0ce;
     text-decoration: none;
     /* background-color: #497bb4 */
 }
