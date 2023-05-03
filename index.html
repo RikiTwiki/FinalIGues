@@ -56,7 +56,31 @@
             background-color: #1bb0ce;
         }
     
+        .dropdown {
+            position: relative;
+        }
     
+        .dropdown ul {
+            display: none;
+        }
+    
+        .dropdown ul.open {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #1bb0ce;
+            border: 1px solid;
+            width: 60%;
+            border-color: #fff;
+            border-radius: 0.5rem;
+            margin-top: 10px;
+        }
+
+        .dropdown ul.open li {
+            color: #fff;
+            list-style-type: none;
+        }
     
         @media (max-width: 991px) {
             .navbar-collapse {
@@ -426,7 +450,12 @@
                             </div> -->
                             <h5 class="mb-3">Магистратура в Казахстане</h5>
                             <p class="mb-4">Магистратура в Академии государственного управления при Президенте Республики Казахстан</p>
-                            <a class="btn btn-sm" href="academy-kazakhstan.html"><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                            <button id="button" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button>
+                            <div class="dropdown">
+                                <ul id="menu">
+                                    <li>магистратура</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -441,7 +470,13 @@
                             </div> -->
                             <h5 class="mb-3">Магистратура в Кыргызстане</h5>
                             <p class="mb-4">Магистратура в Академии государственного управления при Президенте Кыргызской Республики</p>
-                            <a class="btn btn-sm dop-info" href="academy-kyrgyzstan.html" class="dop-info"><i class="fa fa-plus text-primary me-2"></i><span class="dop-info__btn-text">Подробнее</span></a>
+                            <button id="button2" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button>
+                            <div class="dropdown">
+                                <ul id="menu2">
+                                    <li>магистратура</li>
+                                    <li>72 курсы пов. Кв.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -456,7 +491,43 @@
                             </div> -->
                             <h5 class="mb-3">Стипендия в Германии</h5>
                             <p class="mb-4">Стипендия Фонда Ханнса Зайделя в Германии для одаренных молодых людей из развивающихся стран </p>
-                            <a class="btn btn-sm dop-info" href="scholarship-germany.html"><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                            <a href="scholarship-germany.html"><button id="button3" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button></a>
+                            <!-- <div class="dropdown">
+                                <ul id="menu3">
+                                    <li>Контакты</li>
+                                    <li>Личный кабинет</li>
+                                    <li>Сообщения</li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/germany.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
+                            </div> -->
+                            <h5 class="mb-3">Магистратура в Таджикистане</h5>
+                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Республики Таджикистан</p>
+                            <button id="button3" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button>
+                            <div class="dropdown">
+                                <ul id="menu2">
+                                    <li>магистратура</li>
+                                    <li>проект «Женщина лидер»</li>
+                                    <li>проект «МСУ»</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="dropdown">
+                                <ul id="menu3">
+                                    <li>Контакты</li>
+                                    <li>Личный кабинет</li>
+                                    <li>Сообщения</li>
+                                </ul>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -617,6 +688,37 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        const button = document.getElementById("button");
+        const button2 = document.getElementById("button2");
+        const button3 = document.getElementById("button3");
+        const menu = document.getElementById("menu");
+        const menu2 = document.getElementById("menu2");
+        const menu3 = document.getElementById("menu3");
+
+        button.onclick = function () {
+            if (menu.className === "open") {
+                menu.className = "";
+            } else {
+                menu.className = "open"
+            }
+        }
+        button2.onclick = function () {
+            if (menu2.className === "open") {
+                menu2.className = "";
+            } else {
+                menu2.className = "open"
+            }
+        }
+        button3.onclick = function () {
+            if (menu3.className === "open") {
+                menu3.className = "";
+            } else {
+                menu3.className = "open"
+            }
+        }
+    </script>
 </body>
 
 </html>
