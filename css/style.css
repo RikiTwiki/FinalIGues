@@ -10,6 +10,10 @@ body {
     --dark: #000000;
 }
 
+.videos{
+    height: 460px !important;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
