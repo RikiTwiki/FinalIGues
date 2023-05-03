@@ -251,10 +251,28 @@ h6,
     position: relative;
 }
 
-.dop-info {
+/* .dop-info {
     position:absolute;
     bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+.dop-info {
+    position: relative;
+    text-align: center;
+    padding: 6px 12px;
 }
+
+.icon-container {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 .service-item .service-img {
     position: absolute;
@@ -336,7 +354,6 @@ h6,
     overflow: hidden;
     transition: .3s;
 }
-
 /* .service-item:hover .service-text .btn {
     width: 120px;
 } */

@@ -56,31 +56,42 @@
             background-color: #1bb0ce;
         }
     
-        .dropdown {
-            position: relative;
-        }
-    
-        .dropdown ul {
-            display: none;
-        }
-    
-        .dropdown ul.open {
-            display: block;
+        .dropdown-list {
             position: absolute;
-            left: 0;
-            top: 0;
-            background: #1bb0ce;
-            border: 1px solid;
-            width: 60%;
-            border-color: #fff;
-            border-radius: 0.5rem;
+            display: none;
+            z-index: 10;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
             margin-top: 10px;
+            border-radius: 0.3rem;
         }
-
-        .dropdown ul.open li {
-            color: #fff;
+    
+        .dropdown-list ul {
             list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
+    
+        .dropdown-list li {
+            margin-bottom: 5px;
+        }
+    
+        .dropdown-list a {
+            text-decoration: none;
+            color: #333;
+            padding: 4px 6px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+    
+        .dropdown-list a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+    
+    
     
         @media (max-width: 991px) {
             .navbar-collapse {
@@ -435,7 +446,6 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <!-- <p class="fs-5 fw-bold text-primary">Our Services</p> -->
                 <h1 class="display-5 mb-5">Стипендиальные Программы</h1>
             </div>
             <div class="row g-4">
@@ -445,15 +455,14 @@
                             <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                            </div> -->
                             <h5 class="mb-3">Магистратура в Казахстане</h5>
-                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Республики Казахстан</p>
-                            <button id="button" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button>
-                            <div class="dropdown">
-                                <ul id="menu">
-                                    <li>магистратура</li>
+                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Республики
+                                Казахстан</p>
+                            <a class="btn btn-sm dop-info" href="">
+                                    <i class="fa fa-plus text-primary me-2"></i></a>
+                            <div class="dropdown-list" style="display: none;">
+                                <ul>
+                                    <li><a href="academy-kazakhstan.html">магистратура</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -465,16 +474,15 @@
                             <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div> -->
                             <h5 class="mb-3">Магистратура в Кыргызстане</h5>
-                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Кыргызской Республики</p>
-                            <button id="button2" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button>
-                            <div class="dropdown">
-                                <ul id="menu2">
-                                    <li>магистратура</li>
-                                    <li>72 курсы пов. Кв.</li>
+                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Кыргызской
+                                Республики</p>
+                            <a class="btn btn-sm dop-info" href=""><i
+                                    class="fa fa-plus text-primary me-2"></i></a>
+                            <div class="dropdown-list" style="display: none;">
+                                <ul>
+                                    <li><a href="какая-то_ссылка_1.html">магистратура</a></li>
+                                    <li><a href="какая-то_ссылка_2.html">72 курсы пов. Кв.</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -486,48 +494,56 @@
                             <img class="img-fluid" src="img/germany.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div> -->
                             <h5 class="mb-3">Стипендия в Германии</h5>
-                            <p class="mb-4">Стипендия Фонда Ханнса Зайделя в Германии для одаренных молодых людей из развивающихся стран </p>
-                            <a href="scholarship-germany.html"><button id="button3" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button></a>
-                            <!-- <div class="dropdown">
-                                <ul id="menu3">
-                                    <li>Контакты</li>
-                                    <li>Личный кабинет</li>
-                                    <li>Сообщения</li>
+                            <p class="mb-4">Стипендия Фонда Ханнса Зайделя в Германии для одаренных молодых людей из
+                                развивающихся стран</p>
+                            <a class="btn btn-sm dop-info" href=""><i
+                                    class="fa fa-plus text-primary me-2"></i></a>
+                            <div class="dropdown-list" style="display: none;">
+                                <ul>
+                                    <li><a href="scholarship-germany.html">Подробнее</a></li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/germany.jpg" alt="">
+                            <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div> -->
                             <h5 class="mb-3">Магистратура в Таджикистане</h5>
                             <p class="mb-4">Магистратура в Академии государственного управления при Президенте Республики Таджикистан</p>
-                            <button id="button3" class="btn btn-info"><i class="fa fa-plus text-primary me-2"></i></button>
-                            <div class="dropdown">
-                                <ul id="menu2">
-                                    <li>магистратура</li>
-                                    <li>проект «Женщина лидер»</li>
-                                    <li>проект «МСУ»</li>
+                            <a class="btn btn-sm dop-info" href=""><i
+                                    class="fa fa-plus text-primary me-2"></i></a>
+                            <div class="dropdown-list" style="display: none;">
+                                <ul>
+                                    <li><a href="какая-то_ссылка_1.html">магистратура</a></li>
+                                    <li><a href="какая-то_ссылка_2.html">проект «Женщина лидер»</a></li>
+                                    <li><a href="какая-то_ссылка_3.html">проект «МСУ»</a></li>
                                 </ul>
                             </div>
-                            <!-- <div class="dropdown">
-                                <ul id="menu3">
-                                    <li>Контакты</li>
-                                    <li>Личный кабинет</li>
-                                    <li>Сообщения</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <h5 class="mb-3">Магистратура в Узбекистане</h5>
+                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Республики Таджикистан</p>
+                            <a class="btn btn-sm dop-info" href=""><i
+                                    class="fa fa-plus text-primary me-2"></i></a>
+                            <div class="dropdown-list" style="display: none;">
+                                <ul>
+                                    <li><a href="какая-то_ссылка_1.html">магистратура</a></li>
+                                    <li><a href="какая-то_ссылка_2.html">проект «Женщина лидер»</a></li>
+                                    <li><a href="какая-то_ссылка_3.html">проект «МСУ»</a></li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -690,34 +706,29 @@
     <script src="js/main.js"></script>
 
     <script>
-        const button = document.getElementById("button");
-        const button2 = document.getElementById("button2");
-        const button3 = document.getElementById("button3");
-        const menu = document.getElementById("menu");
-        const menu2 = document.getElementById("menu2");
-        const menu3 = document.getElementById("menu3");
+        document.addEventListener('DOMContentLoaded', function () {
+            var buttons = document.querySelectorAll('.dop-info');
 
-        button.onclick = function () {
-            if (menu.className === "open") {
-                menu.className = "";
-            } else {
-                menu.className = "open"
+            buttons.forEach(function (button) {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault(); // Отключите переход по ссылке
+                    var dropdown = this.parentElement.querySelector('.dropdown-list');
+                    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+                });
+            });
+        });
+
+        // Закройте выпадающий список при клике вне его
+        document.addEventListener('click', function (e) {
+            if (!e.target.classList.contains('dop-info')) {
+                var dropdowns = document.querySelectorAll('.dropdown-list');
+                dropdowns.forEach(function (dropdown) {
+                    dropdown.style.display = 'none';
+                });
             }
-        }
-        button2.onclick = function () {
-            if (menu2.className === "open") {
-                menu2.className = "";
-            } else {
-                menu2.className = "open"
-            }
-        }
-        button3.onclick = function () {
-            if (menu3.className === "open") {
-                menu3.className = "";
-            } else {
-                menu3.className = "open"
-            }
-        }
+        });
+
+
     </script>
 </body>
 
