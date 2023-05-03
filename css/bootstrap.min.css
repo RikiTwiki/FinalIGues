@@ -4183,13 +4183,13 @@ fieldset:disabled .btn {
 
 .dropdown-menu-dark .dropdown-item:hover,
 .dropdown-menu-dark .dropdown-item:focus {
-    color: #fff;
+    /* color: #fff; */
     background-color: rgba(255, 255, 255, 0.15)
 }
 
 .dropdown-menu-dark .dropdown-item.active,
 .dropdown-menu-dark .dropdown-item:active {
-    color: #fff;
+    /* color: #fff; */
     background-color: #205295
 }
 
