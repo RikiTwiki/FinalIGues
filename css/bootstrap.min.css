@@ -3083,7 +3083,7 @@ fieldset:disabled .btn {
 .btn-primary {
     color: #000;
     background-color: #0097d2;
-    border-color: #34588e
+    border-color: #0097d2
 }
 
 .btn-primary:hover {
@@ -3097,7 +3097,7 @@ fieldset:disabled .btn {
     color: #000;
     background-color: #ffffff;
     border-color: #486e99;
-    box-shadow: 0 0 0 .25rem rgb(27, 176, 206)
+    box-shadow: 0 0 0 .1rem rgb(0, 151, 210)
 }
 
 .btn-check:checked+.btn-primary,
@@ -3106,8 +3106,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: white;
-    background-color: #1bb0ce;
-    border-color: #1bb0ce;
+    background-color: #0097d2;
+    border-color: #0097d2;
 }
 
 .btn-check:checked+.btn-primary:focus,
