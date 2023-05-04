@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gardener - Gardening Website Template</title>
+    <link rel="icon" type="image/jpg" href="./img/logo-ru.jpg"/>
+    <title>Фонд Ханнса Зайделя</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -42,11 +43,14 @@
 
     <style>
         .dropdown-item {
-            transition: 0.9s;
+            /* transition: 0.9s; */
+            transition: 0.6s;
+            /* Время эффекта */
+            text-align: left;
         }
     
         .dropdown-item:hover {
-            color: #497bb4;
+            transform: scale(1.06);
         }
     
     
@@ -89,6 +93,22 @@
         .dropdown-list a:hover {
             background-color: #007bff;
             color: white;
+        }
+    
+    
+        .carousel-indicators li {
+            background-color: #0097d2;
+        }
+    
+        .carousel-indicators .active {
+            background-color: #0073a7;
+        }
+    
+        .service-text {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     
     
@@ -162,10 +182,10 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">База знаний</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="books.html" class="dropdown-item">Книги</a>
-                        <a href="presentations.html" class="dropdown-item">Презентации</a>
-                        <a href="video.html" class="dropdown-item">Видео</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="books.html" class="dropdown-item-a">Книги</a>
+                        <a href="presentations.html" class="dropdown-item-a">Презентации</a>
+                        <a href="video.html" class="dropdown-item-a">Видео</a>
+                        <!-- <a href="404.html" class="dropdown-item-a">404 Page</a> -->
                     </div>
                 </div>
                 <!-- <div class="nav-item dropdown">
@@ -189,7 +209,7 @@
                     </div>
                 </div> -->
                 <!-- <button type="button" class="btn btn-primary py-2 top-0 end-0 mt-2 me-2">Подписаться</button> -->
-                <button type="button" class="btn btn-primary py-2 top-0 end-0 mt-2 me-2" data-bs-toggle="modal" data-bs-target="#subscribeModal">Подписаться</button>
+                <button type="button" class="btn btn-primary py-2 top-0 end-0 me-2" data-bs-toggle="modal" data-bs-target="#subscribeModal">Подписаться</button>
             </div>
         </div>
     </nav>
@@ -349,17 +369,16 @@
         <div class="row g-5">
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                 <div>
-                    <span class="display-4 text-white fs-1 me-3">Более</span>
-                    <span class="display-4 text-white" data-toggle="counter-up">4000</span>
                     
+                    <span class="display-4 text-white" data-toggle="counter-up">4000</span>
+                    <span class="display-4 text-white fs-1 me-3">+</span>
                 </div>
                 <span class="fs-5 fw-semi-bold text-light">Количество выпускников</span>
             </div>
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                 <div>
-                    <span class="display-4 text-white fs-1 me-3">Более</span>
                     <span class="display-4 text-white" data-toggle="counter-up">200</span>
-                    
+                    <span class="display-4 text-white fs-1 me-3">+</span>
                 </div>
                 <span class="fs-5 fw-semi-bold text-light">Проведено тренингов</span>
             </div>
@@ -373,9 +392,8 @@
             </div>
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
                 <div>
-                    <span class="display-4 text-white fs-1 me-3">Более</span>
                     <span class="display-4 text-white" data-toggle="counter-up">200</span>
-                    
+                    <span class="display-4 text-white fs-1 me-3">+</span>
                 </div>
                 <span class="fs-5 fw-semi-bold text-light">Микротренингов</span>
             </div>
@@ -446,38 +464,58 @@
             <h1 class="display-5 mb-5">Стипендиальные Программы</h1>
         </div>
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-    
-    
                     <div class="container-xxl py-5">
                         <div class="container">
-    
                             <div class="row g-4">
                                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
-                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
+                                            <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
                                         </div>
                                         <div class="service-text rounded p-5">
-                                            <h5 class="mb-3">Магистратура в Казахстане</h5>
-                                            <p class="mb-4">Магистратура в Академии государственного управления при
-                                                Президенте
-                                                Республики
-                                                Казахстан</p>
+                                            <h5 class="mb-3">Магистратура в Кыргызстане</h5>
+                                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Кыргызской Республики</p>
                                             <div class="dropdown">
                                                 <button class="btn btn-primary dropdown-toggle"
                                                     data-bs-toggle="dropdown">Подробнее</button>
                                                 <div class="dropdown-menu bg-dark m-0 mt-2">
-                                                    <a href="{% url 'book' %}" class="dropdown-item">Магистратура</a>
-                                                    <a href="{% url 'presentation' %}" class="dropdown-item">72 часа чего-то
-                                                        там</a>
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <a href="404.html" class="dropdown-item text-white">72 курсы пов. Кв.</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-    
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="service-item rounded d-flex h-100">
+                                        <div class="service-img rounded">
+                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
+                                        </div>
+                                        <div class="service-text rounded p-5">
+                                            <h5 class="mb-3">Магистратура в Таджикистане</h5>
+                                            <p class="mb-4">Магистратура в Академии государственного управления при
+                                                Президенте Республики Таджикистан</p>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Подробнее</button>
+                                                <div class="dropdown-menu bg-dark m-0 mt-2">
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Проект «Женщина лидер»</a>
+                                                    <!-- <a href="{% url 'presentation' %}" class="dropdown-item">Проект «МСУ»</a> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
@@ -493,66 +531,31 @@
                                                 <button class="btn btn-primary dropdown-toggle"
                                                     data-bs-toggle="dropdown">Подробнее</button>
                                                 <div class="dropdown-menu bg-dark m-0 mt-2">
-                                                    <a href="{% url 'book' %}" class="dropdown-item">Магистратура</a>
-                                                    <a href="{% url 'presentation' %}" class="dropdown-item">72 часа
-                                                        чего-то
-                                                        там</a>
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="service-item rounded d-flex h-100">
-                                        <div class="service-img rounded">
-                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
-                                        </div>
-                                        <div class="service-text rounded p-5">
-                                            <h5 class="mb-3">Магистратура в Казахстане</h5>
-                                            <p class="mb-4">Магистратура в Академии государственного управления при
-                                                Президенте
-                                                Республики
-                                                Казахстан</p>
-                                            <div class="dropdown">
-                                                <button class="btn btn-primary dropdown-toggle"
-                                                    data-bs-toggle="dropdown">Подробнее</button>
-                                                <div class="dropdown-menu bg-dark m-0 mt-2">
-                                                    <a href="{% url 'book' %}" class="dropdown-item">Магистратура</a>
-                                                    <a href="{% url 'presentation' %}" class="dropdown-item">72 часа
-                                                        чего-то
-                                                        там</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-    
                             </div>
                         </div>
                     </div>
-    
-    
                 </div>
-    
-    
                 <div class="carousel-item">
                     <div class="container-xxl py-5">
                         <div class="container">
                             <!-- <div class="text-center mx-auto" style="max-width: 500px;">
-                                    <h1 class="display-5 mb-5">Стипендиальные Программы №2</h1>
-                                </div> -->
+                                        <h1 class="display-5 mb-5">Стипендиальные Программы №2</h1>
+                                    </div> -->
                             <div class="row g-4">
-    
-    
                                 <div class="col-lg-4 col-md-6">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
                                         </div>
                                         <div class="service-text rounded p-5">
-                                            <h5 class="mb-3">Магистратура в Таджикистане</h5>
+                                            <h5 class="mb-3">Магистратура в Узбекистане</h5>
                                             <p class="mb-4">Магистратура в Академии государственного управления при
                                                 Президенте
                                                 Республики
@@ -561,60 +564,49 @@
                                                 <button class="btn btn-primary dropdown-toggle"
                                                     data-bs-toggle="dropdown">Подробнее</button>
                                                 <div class="dropdown-menu bg-dark m-0 mt-2">
-                                                    <a href="{% url 'book' %}" class="dropdown-item">Магистратура</a>
-                                                    <a href="{% url 'presentation' %}" class="dropdown-item">72 часа
-                                                        чего-то
-                                                        там</a>
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <!-- <a href="{% url 'presentation' %}" class="dropdown-item">проект «МСУ»</a> -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-    
                                 <div class="col-lg-4 col-md-6">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
                                         </div>
                                         <div class="service-text rounded p-5">
-                                            <h5 class="mb-3">Магистратура в Таджикистане</h5>
-                                            <p class="mb-4">Магистратура в Академии государственного управления при
-                                                Президенте
-                                                Республики
-                                                Казахстан</p>
+                                            <h5 class="mb-3">Стипендия в Германии</h5>
+                                            <p class="mb-4">Стипендия Фонда Ханнса Зайделя в Германии</p>
                                             <div class="dropdown">
                                                 <button class="btn btn-primary dropdown-toggle"
                                                     data-bs-toggle="dropdown">Подробнее</button>
                                                 <div class="dropdown-menu bg-dark m-0 mt-2">
-                                                    <a href="{% url 'book' %}" class="dropdown-item">Магистратура</a>
-                                                    <a href="{% url 'presentation' %}" class="dropdown-item">72 часа
-                                                        чего-то
-                                                        там</a>
+                                                    <a href="scholarship-germany.html"
+                                                        class="dropdown-item text-white">Стипендия</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="col-lg-4 col-md-6">
+                                <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
-                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
+                                            <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
                                         </div>
                                         <div class="service-text rounded p-5">
-                                            <h5 class="mb-3">Магистратура в Таджикистане</h5>
-                                            <p class="mb-4">Магистратура в Академии государственного управления при
-                                                Президенте
-                                                Республики
-                                                Казахстан</p>
+                                            <h5 class="mb-3">Магистратура в Кыргызстане</h5>
+                                            <p class="mb-4">Магистратура в УНПК МУК</p>
                                             <div class="dropdown">
                                                 <button class="btn btn-primary dropdown-toggle"
                                                     data-bs-toggle="dropdown">Подробнее</button>
                                                 <div class="dropdown-menu bg-dark m-0 mt-2">
-                                                    <a href="{% url 'book' %}" class="dropdown-item">Магистратура</a>
-                                                    <a href="{% url 'presentation' %}" class="dropdown-item">72 часа
-                                                        чего-то
-                                                        там</a>
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <a href="404.html" class="dropdown-item text-white">72
+                                                        курсы пов. Кв.</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -623,9 +615,7 @@
                             </div>
                         </div>
                     </div>
-    
                 </div>
-    
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -635,7 +625,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div>        
     </div>
     <!-- Service End -->
 
@@ -826,7 +816,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="subscribeForm">
                         <div class="mb-3">
                             <label for="name" class="form-label">Имя</label>
                             <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
@@ -834,16 +824,45 @@
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                            <div class="invalid-feedback" id="emailError">
+                                Пожалуйста, введите корректный email.
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                    <button type="button" class="btn btn-primary">Подписаться</button>
+                    <button type="button" class="btn btn-primary" id="subscribeButton">Подписаться</button>
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
+      const emailInput = document.getElementById('email');
+      const emailError = document.getElementById('emailError');
+      const subscribeButton = document.getElementById('subscribeButton');
+    
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+    
+      subscribeButton.addEventListener('click', (event) => {
+        event.preventDefault();
+    
+        if (validateEmail(emailInput.value)) {
+          emailInput.classList.remove('is-invalid');
+          emailError.style.display = 'none';
+          // Здесь можно добавить код для отправки формы, например, через AJAX
+          console.log('Подписка успешна');
+        } else {
+          emailInput.classList.add('is-invalid');
+          emailError.style.display = 'block';
+        }
+      });
+    </script>    
+    
   
 </body>
 
