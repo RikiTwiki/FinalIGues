@@ -51,6 +51,13 @@
             justify-content: space-between;
         }
     
+        .carousel-indicators li {
+            background-color: #0097d2;
+        }
+    
+        .carousel-indicators .active {
+            background-color: #0073a7;
+        }
     
         @media (max-width: 991px) {
             .navbar-collapse {
@@ -173,78 +180,173 @@
 
 
     <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <!-- <p class="fs-5 fw-bold text-primary">Our Services</p> -->
-                <h1 class="display-5 mb-5">Стипендиальные программы</h1>
+    <div class="container-fluid p-0 wow fadeIn  d-lg-block d-sm-none" data-wow-delay="0.1s">
+        <!-- <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-5">Стипендиальные Программы</h1>
+        </div> -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-xxl py-5">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="service-item rounded d-flex h-100">
+                                        <div class="service-img rounded">
+                                            <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
+                                        </div>
+                                        <div class="service-text rounded p-5">
+                                            <h5 class="mb-3">Магистратура в Кыргызстане</h5>
+                                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Кыргызской Республики</p>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Подробнее</button>
+                                                <div class="dropdown-menu bg-dark m-0 mt-2">
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <a href="404.html" class="dropdown-item text-white">72 курсы пов. Кв.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="service-item rounded d-flex h-100">
+                                        <div class="service-img rounded">
+                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
+                                        </div>
+                                        <div class="service-text rounded p-5">
+                                            <h5 class="mb-3">Магистратура в Таджикистане</h5>
+                                            <p class="mb-4">Магистратура в Академии государственного управления при
+                                                Президенте Республики Таджикистан</p>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Подробнее</button>
+                                                <div class="dropdown-menu bg-dark m-0 mt-2">
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Проект «Женщина лидер»</a>
+                                                    <!-- <a href="{% url 'presentation' %}" class="dropdown-item">Проект «МСУ»</a> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="service-item rounded d-flex h-100">
+                                        <div class="service-img rounded">
+                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
+                                        </div>
+                                        <div class="service-text rounded p-5">
+                                            <h5 class="mb-3">Магистратура в Казахстане</h5>
+                                            <p class="mb-4">Магистратура в Академии государственного управления при
+                                                Президенте
+                                                Республики
+                                                Казахстан</p>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Подробнее</button>
+                                                <div class="dropdown-menu bg-dark m-0 mt-2">
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-xxl py-5">
+                        <div class="container">
+                            <!-- <div class="text-center mx-auto" style="max-width: 500px;">
+                                        <h1 class="display-5 mb-5">Стипендиальные Программы №2</h1>
+                                    </div> -->
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item rounded d-flex h-100">
+                                        <div class="service-img rounded">
+                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
+                                        </div>
+                                        <div class="service-text rounded p-5">
+                                            <h5 class="mb-3">Магистратура в Узбекистане</h5>
+                                            <p class="mb-4">Магистратура в Академии государственного управления при
+                                                Президенте
+                                                Республики
+                                                Казахстан</p>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Подробнее</button>
+                                                <div class="dropdown-menu bg-dark m-0 mt-2">
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <!-- <a href="{% url 'presentation' %}" class="dropdown-item">проект «МСУ»</a> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item rounded d-flex h-100">
+                                        <div class="service-img rounded">
+                                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
+                                        </div>
+                                        <div class="service-text rounded p-5">
+                                            <h5 class="mb-3">Стипендия в Германии</h5>
+                                            <p class="mb-4">Стипендия Фонда Ханнса Зайделя в Германии</p>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Подробнее</button>
+                                                <div class="dropdown-menu bg-dark m-0 mt-2">
+                                                    <a href="scholarship-germany.html"
+                                                        class="dropdown-item text-white">Стипендия</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+                                    <div class="service-item rounded d-flex h-100">
+                                        <div class="service-img rounded">
+                                            <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
+                                        </div>
+                                        <div class="service-text rounded p-5">
+                                            <h5 class="mb-3">Магистратура в Кыргызстане</h5>
+                                            <p class="mb-4">Магистратура в УНПК МУК</p>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Подробнее</button>
+                                                <div class="dropdown-menu bg-dark m-0 mt-2">
+                                                    <a href="404.html"
+                                                        class="dropdown-item text-white">Магистратура</a>
+                                                    <a href="404.html" class="dropdown-item text-white">72
+                                                        курсы пов. Кв.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                            </div> -->
-                            <h5 class="mb-3">Магистратура в Казахстане</h5>
-                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Республики Казахстан</p>
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Подробнее</button>
-                                <div class="dropdown-menu bg-dark m-0 mt-2">
-                                    <a href="{% url 'book' %}" class="dropdown-item text-white">Магистратура</a>
-                                    <a href="{% url 'presentation' %}" class="dropdown-item text-white">72 часа чего-то там</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div> -->
-                            <h5 class="mb-3">Магистратура в Кыргызстане</h5>
-                            <p class="mb-4">Магистратура в Академии государственного управления при Президенте Кыргызской Республики</p>
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Подробнее</button>
-                                <div class="dropdown-menu bg-dark m-0 mt-2">
-                                    <a href="{% url 'book' %}" class="dropdown-item text-white">Магистратура</a>
-                                    <a href="{% url 'presentation' %}" class="dropdown-item text-white">72 часа чего-то там</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/germany.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <!-- <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div> -->
-                            <h5 class="mb-3">Стипендия в Германии</h5>
-                            <p class="mb-4">Стипендия Фонда Ханнса Зайделя в Германии для одаренных молодых людей из развивающихся стран </p>
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Подробнее</button>
-                                <div class="dropdown-menu bg-dark m-0 mt-2">
-                                    <a href="{% url 'book' %}" class="dropdown-item text-white">Магистратура</a>
-                                    <a href="{% url 'presentation' %}" class="dropdown-item text-white">72 часа чего-то там</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>        
     </div>
     <!-- Projects End -->
 
