@@ -773,3 +773,14 @@ background-color: rgba(73, 123, 180, 0.8);
 .btn-check:focus + .btn-primary, .btn-primary:focus {
     box-shadow: 0 0 0 .1rem rgb(0, 151, 210) !important;
 }
+
+
+.plus {
+    width: 45px;
+    font-size: 110%;
+    font-weight: bolder;
+}
+
+.plus:hover {
+    color: #0097d2 !important;
+}
