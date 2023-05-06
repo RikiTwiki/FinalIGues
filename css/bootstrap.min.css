@@ -3944,7 +3944,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1492px) {
     .dropdown-menu-lg-start {
         --bs-position: start
     }
@@ -4474,7 +4474,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-nav .dropdown-menu {
-    position: static
+    /* position: static !important; */
 }
 
 .navbar-text {
@@ -4595,7 +4595,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1492px) {
     .navbar-expand-lg {
         flex-wrap: nowrap;
         justify-content: flex-start
@@ -6695,7 +6695,7 @@ fieldset:disabled .btn {
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #b3b3b3;
     background-clip: padding-box;
     border: 0;
     border-top: 10px solid transparent;
