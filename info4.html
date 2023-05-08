@@ -63,7 +63,12 @@
             background-color: #0097d2 !important;
         }
 
-        .bg-primary a {
+        a .bg:hover {
+            background-color: #e9e8f5 !important;
+            transition: 1s !important;
+        }
+
+        a .bg-primary {
             color: white !important;
         }
     </style>
@@ -187,20 +192,12 @@
                     data-bs-target="#subscribeModal">Подписаться</button>
             </div>
         </div>
-        <div class="bottom-navbar bg-white text-center">
-            <div class="text-center d-flex justify-content-center">
-                <div class="p-2 px-5"><a href="info.html">Микротренинги</a></div>
-                <div class="p-2 px-5"><a href="info2.html">Публикации</a></div>
-                <div class="p-2 px-5"><a href="info3.html">Встречи одногруппников</a></div>
-                <div class="p-2 bg-primary px-5"><a href="info4.html">Социальные проекты</a></div>
-            </div>
-        </div>
     </nav>
 
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <h1 class="display-3 text-white mb-4 animated slideInDown">
                 Информация для выпускников
@@ -208,6 +205,25 @@
         </div>
     </div>
     <!-- Page Header End -->
+
+    <div class="container">
+        <div class="bg-white text-center">
+            <div class="text-center d-flex justify-content-center">
+                <a href="info.html">
+                    <div class="p-2 px-5 bg">Микротренинги</div>
+                </a>
+                <a href="info2.html">
+                    <div class="p-2 px-5 bg">Публикации</div>
+                </a>
+                <a href="info3.html">
+                    <div class="p-2 px-5 bg">Встречи одногруппников</div>
+                </a>
+                <a href="info4.html">
+                    <div class="p-2 bg-primary px-5">Социальные проекты</div>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Projects Start -->
     <!-- <div class="container-xxl py-5">
