@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,11 +36,11 @@
 
 
     <style>
-        .dropdown-item{
+        .dropdown-item {
             transition: 0.9s;
         }
 
-        .dropdown-item:hover{
+        .dropdown-item:hover {
             color: #497bb4;
         }
 
@@ -59,7 +61,8 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
 
@@ -80,10 +83,14 @@
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <span>Подписывайтесь на нас:</span>
-                    <a class="btn btn-link text-light" href="https://www.facebook.com/HannsSeidelStiftungZentralasien/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href="https://twitter.com/hsfoundationca"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light"
+                        href="https://www.facebook.com/HannsSeidelStiftungZentralasien/"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://twitter.com/hsfoundationca"><i
+                            class="fab fa-twitter"></i></a>
                     <!-- <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    <a class="btn btn-link text-light" href="https://www.instagram.com/hanns_seidel_foundation_ca/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.instagram.com/hanns_seidel_foundation_ca/"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -127,7 +134,21 @@
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div> -->
-                <button type="button" class="btn btn-primary py-2 top-0 end-0 me-2" data-bs-toggle="modal" data-bs-target="#subscribeModal">Подписаться</button>
+
+                <!-- Language Dropdown Start -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Язык</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="?lang=ru" class="dropdown-item-a active">Русский</a>
+                        <a href="?lang=en" class="dropdown-item-a">English</a>
+                        <a href="?lang=es" class="dropdown-item-a">Кыргызча</a>
+                        <!-- Add more languages here -->
+                    </div>
+                </div>
+                <!-- Language Dropdown End -->
+
+                <button type="button" class="btn btn-primary py-2 top-0 end-0 me-2" data-bs-toggle="modal"
+                    data-bs-target="#subscribeModal">Подписаться</button>
             </div>
         </div>
     </nav>
@@ -164,7 +185,8 @@
                         <div class="service-text rounded p-5">
                             <h5 class="mb-3"><b>72-часовые курсы повышения квалификации для органов МСУ</b></h5>
                             <p class="mb-4">Дата: 28 июля- 1 августа 2022 года. г.Бишкек</p>
-                            <a class="btn btn-sm dop-info" href=""><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                            <a class="btn btn-sm dop-info" href=""><i
+                                    class="fa fa-plus text-primary me-2"></i>Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -175,8 +197,10 @@
                         </div>
                         <div class="service-text rounded p-5">
                             <h5 class="mb-3"><b>Школа молодых фермеров</b></h4>
-                            <p class="mb-4">Дата: 1-2 августа 2022 года. Тонский район Основная технология выращивания картофеля. Работа с семенами</p>
-                            <a class="btn btn-sm dop-info" href=""><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                                <p class="mb-4">Дата: 1-2 августа 2022 года. Тонский район Основная технология
+                                    выращивания картофеля. Работа с семенами</p>
+                                <a class="btn btn-sm dop-info" href=""><i
+                                        class="fa fa-plus text-primary me-2"></i>Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -186,9 +210,12 @@
                             <img class="img-fluid" src="img/germany.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <h5 class="mb-3"><b>Тренинг по разработке проектных предложений для привлечения финансирования</b></h4>
-                            <p class="mb-4">Участники: выпускники Фонда Ханнса Зайделя из Нарынской области 10-11 июня 2022 в г.Нарын</p>
-                            <a class="btn btn-sm dop-info" href=""><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                            <h5 class="mb-3"><b>Тренинг по разработке проектных предложений для привлечения
+                                    финансирования</b></h4>
+                                <p class="mb-4">Участники: выпускники Фонда Ханнса Зайделя из Нарынской области 10-11
+                                    июня 2022 в г.Нарын</p>
+                                <a class="btn btn-sm dop-info" href=""><i
+                                        class="fa fa-plus text-primary me-2"></i>Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -201,8 +228,10 @@
                         </div>
                         <div class="service-text rounded p-5">
                             <h5 class="mb-3"><b>Онлайн-конференция/семинар для личностного развития</b></h4>
-                            <p class="mb-4">Роберт Гарайссен 17 мая 2022 для регистрации отправьте уведомление на адрес omurkanova-b@hss.de</p>
-                            <a class="btn btn-sm dop-info" href=""><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                                <p class="mb-4">Роберт Гарайссен 17 мая 2022 для регистрации отправьте уведомление на
+                                    адрес omurkanova-b@hss.de</p>
+                                <a class="btn btn-sm dop-info" href=""><i
+                                        class="fa fa-plus text-primary me-2"></i>Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -212,9 +241,11 @@
                             <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <h5 class="mb-3"><b>Онлайн-тренинг для личностного развития на тему: «ЭГО! Завышенная самооценка и адекватная уверенность в себе» г-на Роберта Гарайссена</b></h4>
-                            <p class="mb-4">Дата и время: вторник, 28 июня 2022 г., в 18.30 (время для Бишкека)</p>
-                            <a class="btn btn-sm dop-info" href=""><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                            <h5 class="mb-3"><b>Онлайн-тренинг для личностного развития на тему: «ЭГО! Завышенная
+                                    самооценка и адекватная уверенность в себе» г-на Роберта Гарайссена</b></h4>
+                                <p class="mb-4">Дата и время: вторник, 28 июня 2022 г., в 18.30 (время для Бишкека)</p>
+                                <a class="btn btn-sm dop-info" href=""><i
+                                        class="fa fa-plus text-primary me-2"></i>Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -224,9 +255,11 @@
                             <img class="img-fluid" src="img/germany.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <h5 class="mb-3"><b>Онлайн-конференция/лекция на тему: «Структура государственного и местного управления в Баварии - обзор», г-н Раймунд Хельфрих</b></h4>
-                            <p class="mb-4">Дата и время : 7 июля 2022 года, 18:30</p>
-                            <a class="btn btn-sm dop-info" href=""><i class="fa fa-plus text-primary me-2"></i>Подробнее</a>
+                            <h5 class="mb-3"><b>Онлайн-конференция/лекция на тему: «Структура государственного и
+                                    местного управления в Баварии - обзор», г-н Раймунд Хельфрих</b></h4>
+                                <p class="mb-4">Дата и время : 7 июля 2022 года, 18:30</p>
+                                <a class="btn btn-sm dop-info" href=""><i
+                                        class="fa fa-plus text-primary me-2"></i>Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -240,7 +273,7 @@
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-               
+
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Меню</h4>
                         <a class="btn btn-link" href="index.html">Главная</a>
@@ -253,14 +286,20 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Контакты</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> 237 ул. Панфилова Бишкек, Кыргызстан</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0 312 662 486</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> kirgisistan@hss.de</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://twitter.com/hsfoundationca"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/HannsSeidelStiftungZentralasien/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/hanns_seidel_foundation_ca/"><i class="fab fa-instagram"></i></a>
-                    </div>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> 237 ул. Панфилова Бишкек, Кыргызстан
+                        </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0 312 662 486</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i> kirgisistan@hss.de</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                href="https://twitter.com/hsfoundationca"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                href="https://www.facebook.com/HannsSeidelStiftungZentralasien/"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                href="https://www.instagram.com/hanns_seidel_foundation_ca/"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
                 </div>
                 <!-- <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Контакты</h4>
@@ -300,7 +339,8 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -350,32 +390,32 @@
             </div>
         </div>
     </div>
-    
+
     <script>
-      const emailInput = document.getElementById('email');
-      const emailError = document.getElementById('emailError');
-      const subscribeButton = document.getElementById('subscribeButton');
-    
-      function validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-      }
-    
-      subscribeButton.addEventListener('click', (event) => {
-        event.preventDefault();
-    
-        if (validateEmail(emailInput.value)) {
-          emailInput.classList.remove('is-invalid');
-          emailError.style.display = 'none';
-          // Здесь можно добавить код для отправки формы, например, через AJAX
-          console.log('Подписка успешна');
-        } else {
-          emailInput.classList.add('is-invalid');
-          emailError.style.display = 'block';
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('emailError');
+        const subscribeButton = document.getElementById('subscribeButton');
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
         }
-      });
+
+        subscribeButton.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            if (validateEmail(emailInput.value)) {
+                emailInput.classList.remove('is-invalid');
+                emailError.style.display = 'none';
+                // Здесь можно добавить код для отправки формы, например, через AJAX
+                console.log('Подписка успешна');
+            } else {
+                emailInput.classList.add('is-invalid');
+                emailError.style.display = 'block';
+            }
+        });
     </script>
-    
+
 </body>
 
 </html>
