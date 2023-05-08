@@ -70,6 +70,55 @@
     a .bg-primary {
       color: white !important;
     }
+
+    .custom-container {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+    }
+
+    .custom-container::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari, and Opera */
+    }
+
+    .custom-container>a {
+      flex: 0 0 auto;
+      text-decoration: none;
+    }
+
+    .bg {
+      background-color: white;
+    }
+
+    .bg-primary {
+      background-color: blue;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .p-2 {
+      padding: 0.5rem;
+    }
+
+    .px-5 {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .custom-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: visible;
+      }
+    }
   </style>
 
   <!-- JavaScript Libraries -->
@@ -204,23 +253,19 @@
   </div>
   <!-- Page Header End -->
 
-  <div class="container">
-    <div class="bg-white text-center">
-      <div class="text-center d-flex justify-content-center">
-        <a href="info.html">
-          <div class="p-2 px-5 bg">Микротренинги</div>
-        </a>
-        <a href="info2.html">
-          <div class="p-2 bg-primary px-5">Публикации</div>
-        </a>
-        <a href="info3.html">
-          <div class="p-2 px-5 bg">Встречи одногруппников</div>
-        </a>
-        <a href="info4.html">
-          <div class="p-2 px-5 bg">Социальные проекты</div>
-        </a>
-      </div>
-    </div>
+  <div class="custom-container">
+    <a href="info.html">
+      <div class="p-2 px-5 bg text-center">Микротренинги</div>
+    </a>
+    <a href="info2.html">
+      <div class="p-2 bg-primary px-5 text-center text-white">Публикации</div>
+    </a>
+    <a href="info3.html">
+      <div class="p-2 px-5 bg text-center">Встречи одногруппников</div>
+    </a>
+    <a href="info4.html">
+      <div class="p-2 px-5 bg text-center">Социальные проекты</div>
+    </a>
   </div>
 
   <!-- Projects Start -->
