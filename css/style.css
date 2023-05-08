@@ -815,3 +815,10 @@ ul {
     padding-left: 0;
     /* Сдвигаем список влево */
 }
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Растягивает контейнер на всю высоту экрана */
+}
