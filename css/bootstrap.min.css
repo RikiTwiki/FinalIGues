@@ -5174,10 +5174,10 @@ fieldset:disabled .btn {
 
 .page-link:focus {
     z-index: 3;
-    color: #2C74B3;
+    color: #0097d2;
     background-color: #e9ecef;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(52, 142, 56, 0.25)
+    box-shadow: 0 0 0 .15rem rgba(0, 151, 210, 0.75)
 }
 
 .page-item:not(:first-child) .page-link {
