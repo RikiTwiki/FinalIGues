@@ -406,18 +406,23 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="subscribeModalLabel">Подписка на рассылку</h5>
+                    <h5 class="modal-title" id="subscribeModalLabel">
+                        Подписка на рассылку
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="subscribeForm">
                         <div class="mb-3">
                             <label for="name" class="form-label">Имя</label>
-                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" />
+                            <div class="invalid-feedback" id="nameError">
+                                Пожалуйста, введите корректный name.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                            <input type="email" class="form-control" id="email" placeholder="Введите ваш email" />
                             <div class="invalid-feedback" id="emailError">
                                 Пожалуйста, введите корректный email.
                             </div>
@@ -425,34 +430,57 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                    <button type="button" class="btn btn-primary" id="subscribeButton">Подписаться</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Закрыть
+                    </button>
+                    <button type="button" class="btn btn-primary" id="subscribeButton">
+                        Подписаться
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        const emailInput = document.getElementById('email');
-        const emailError = document.getElementById('emailError');
-        const subscribeButton = document.getElementById('subscribeButton');
+        const nameInput = document.getElementById("name");
+        const nameError = document.getElementById("nameError");
+
+        const emailInput = document.getElementById("email");
+        const emailError = document.getElementById("emailError");
+        const subscribeButton = document.getElementById("subscribeButton");
+
+        function validateName(name) {
+            const ren = /^[^\s]/;
+            return ren.test(name);
+        }
 
         function validateEmail(email) {
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return re.test(email);
         }
 
-        subscribeButton.addEventListener('click', (event) => {
+        subscribeButton.addEventListener("click", (event) => {
             event.preventDefault();
 
-            if (validateEmail(emailInput.value)) {
-                emailInput.classList.remove('is-invalid');
-                emailError.style.display = 'none';
-                // Здесь можно добавить код для отправки формы, например, через AJAX
-                console.log('Подписка успешна');
+            if (validateName(nameInput.value)) {
+                nameInput.classList.remove("is-invalid");
+                nameError.style.display = "none"
+                console.log("name nice");
             } else {
-                emailInput.classList.add('is-invalid');
-                emailError.style.display = 'block';
+                nameInput.classList.add("is-invalid");
+                nameError.style.display = "block";
+                name.style.display = "block";
+            }
+
+            if (validateEmail(emailInput.value)) {
+                emailInput.classList.remove("is-invalid");
+                emailError.style.display = "none";
+                // Здесь можно добавить код для отправки формы, например, через AJAX
+                console.log("Подписка успешна");
+            } else {
+                emailInput.classList.add("is-invalid");
+                emailError.style.display = "emailError";
+                nameError.style.display = "emailError";
             }
         });
     </script>

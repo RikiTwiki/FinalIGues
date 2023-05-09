@@ -307,7 +307,10 @@
                                 <div class="form-floating">
                                     <input type="text" class="form-control border-0" id="gname"
                                         placeholder="Gurdian Name" />
-                                    <label for="gname">Введите ваше имя</label>
+                                    <label for="gname" class="form-label">Введите ваше имя</label>
+                                    <div class="invalid-feedback" id="gnameError">
+                                        Пожалуйста, введите корректный name.
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -315,6 +318,9 @@
                                     <input type="email" class="form-control border-0" id="gmail"
                                         placeholder="Gurdian Email" />
                                     <label for="gmail">Введите эл. адрес</label>
+                                    <div class="invalid-feedback" id="gmailError">
+                                        Пожалуйста, введите корректный email.
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -333,13 +339,16 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control border-0" placeholder="Leave a message here"
+                                    <textarea type="text" class="form-control border-0" placeholder="Leave a message here"
                                         id="message" style="height: 100px"></textarea>
                                     <label for="message">Введите ваш вопрос</label>
+                                    <div class="invalid-feedback" id="messageError">
+                                        Пожалуйста, введите корректный message.
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">
+                                <button class="btn btn-primary py-3 px-4" type="button" id="subscribeButton">
                                     Отправить
                                 </button>
                             </div>
@@ -461,6 +470,9 @@
                         <div class="mb-3">
                             <label for="name" class="form-label">Имя</label>
                             <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" />
+                            <div class="invalid-feedback" id="nameError">
+                                Пожалуйста, введите корректный name.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
@@ -484,9 +496,42 @@
     </div>
 
     <script>
+
+        const messageInput = document.getElementById("message");
+        const messageError = document.getElementById("messageError");
+
+        const gmailInput = document.getElementById("gmail");
+        const gmailError = document.getElementById("gmailError");
+
+        const gnameInput = document.getElementById("gname");
+        const gnameError = document.getElementById("gnameError");
+
+        const nameInput = document.getElementById("name");
+        const nameError = document.getElementById("nameError");
+
         const emailInput = document.getElementById("email");
         const emailError = document.getElementById("emailError");
         const subscribeButton = document.getElementById("subscribeButton");
+
+        function validateMessage(message) {
+            const re = /^[^\s]/;
+            return re.test(message);
+        }
+
+        function validateGmail(gmail) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(gmail);
+        }
+
+        function validateGname(gname) {
+            const re = /^[^\s]/;
+            return re.test(gname);
+        }
+
+        function validateName(name) {
+            const re = /^[^\s]/;
+            return re.test(name);
+        }
 
         function validateEmail(email) {
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -496,6 +541,42 @@
         subscribeButton.addEventListener("click", (event) => {
             event.preventDefault();
 
+            if (validateMessage(messageInput.value)) {
+                messageInput.classList.remove("is-invalid");
+                messageError.style.display = "none"
+                console.log("message nice");
+            } else {
+                messageInput.classList.add("is-invalid");
+                messageError.style.display = "block";
+            }
+
+            if (validateGmail(gmailInput.value)) {
+                gmailInput.classList.remove("is-invalid");
+                gmailError.style.display = "none"
+                console.log("gemail nice");
+            } else {
+                gmailInput.classList.add("is-invalid");
+                gmailError.style.display = "block";
+            }
+
+            if (validateGname(gnameInput.value)) {
+                gnameInput.classList.remove("is-invalid");
+                gnameError.style.display = "none"
+                console.log("gname nice");
+            } else {
+                gnameInput.classList.add("is-invalid");
+                gnameError.style.display = "block";
+            }
+
+            if (validateName(nameInput.value)) {
+                nameInput.classList.remove("is-invalid");
+                nameError.style.display = "none"
+                console.log("name nice");
+            } else {
+                nameInput.classList.add("is-invalid");
+                nameError.style.display = "block";
+            }
+
             if (validateEmail(emailInput.value)) {
                 emailInput.classList.remove("is-invalid");
                 emailError.style.display = "none";
@@ -503,7 +584,7 @@
                 console.log("Подписка успешна");
             } else {
                 emailInput.classList.add("is-invalid");
-                emailError.style.display = "block";
+                emailError.style.display = "emailError";
             }
         });
     </script>
