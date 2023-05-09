@@ -811,14 +811,13 @@ li {
     padding: 5px;
 }
 
-ul {
-    padding-left: 0;
-    /* Сдвигаем список влево */
-}
-
 .vertical-center {
     display: flex;
     justify-content: center;
     align-items: center;
     /* Растягивает контейнер на всю высоту экрана */
+}
+
+.service-item:hover .service-text .elementor-icon-list-item {
+    color: white !important;
 }
