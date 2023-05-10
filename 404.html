@@ -40,30 +40,12 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/test.css" rel="stylesheet">
 
-    <style>
-        .dropdown-item{
-            transition: 0.9s;
-        }
+    <script src="js/test.js"></script>
+    
 
-        .dropdown-item:hover{
-            color: #497bb4;
-        }
-        @media (max-width: 991px) {
-
-            .navbar-nav button {
-                width: 20% !important;
-            }
-
-            .navbar-collapse {
-                background-color: white;
-            }
-
-            .col-lg-8 .text-white {
-                font-size: 60px;
-            }
-        }
-    </style>
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -298,49 +280,7 @@
         </div>
     </div>
 
-    <script>
-        const nameInput = document.getElementById("name");
-        const nameError = document.getElementById("nameError");
-
-        const emailInput = document.getElementById("email");
-        const emailError = document.getElementById("emailError");
-        const subscribeButton = document.getElementById("subscribeButton");
-
-        function validateName(name) {
-            const ren = /^[^\s]/;
-            return ren.test(name);
-        }
-
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        subscribeButton.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            if (validateName(nameInput.value)) {
-                nameInput.classList.remove("is-invalid");
-                nameError.style.display = "none"
-                console.log("name nice");
-            } else {
-                nameInput.classList.add("is-invalid");
-                nameError.style.display = "block";
-                name.style.display = "block";
-            }
-
-            if (validateEmail(emailInput.value)) {
-                emailInput.classList.remove("is-invalid");
-                emailError.style.display = "none";
-                // Здесь можно добавить код для отправки формы, например, через AJAX
-                console.log("Подписка успешна");
-            } else {
-                emailInput.classList.add("is-invalid");
-                emailError.style.display = "emailError";
-                nameError.style.display = "emailError";
-            }
-        });
-    </script>
+    
     
 </body>
 

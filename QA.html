@@ -34,81 +34,14 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    <style>
-        .accordion button:hover::after,
-        .accordion button:focus::after {
-            cursor: pointer;
-            color: var(--dark);
-            border: 0px solid var(--dark) !important;
-        }
 
-        .accordion-button:not(.collapsed) {
-            color: #0097d2 !important;
-            background-color: #fff !important;
-            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125) !important;
-        }
 
-        .accordion-button:focus {
-            z-index: 3 !important;
-            border-color: #0097d2 !important;
-            outline: 0 !important;
-            box-shadow: 0 0 0 0.25rem rgba(0, 151, 210, 0.25) !important;
-        }
+    <link href="css/test.css" rel="stylesheet">
 
-        @media (max-width: 1491px) {
+    <script src="js/test.js"></script>
 
-            .navbar-nav button {
-                width: 20% !important;
-            }
-
-            .navbar-collapse {
-                background-color: white;
-                padding: 1.5rem !important
-            }
-
-            .now-shadow:hover {
-                box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-                transition-duration: 1s;
-            }
-
-            .col-lg-8 .text-white {
-                font-size: 60px;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-
-            .carousel-inner .row {
-                display: flex;
-                flex-wrap: nowrap;
-                overflow-x: auto;
-            }
-
-            .carousel-inner .col-12 {
-                flex: 0 0 auto;
-                max-width: 100%;
-                margin-bottom: 80px;
-            }
-
-            .carousel-inner .carousel-item {
-                width: 100%;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                display: none;
-            }
-
-            .carousel-indicators {
-                display: none;
-            }
-        }
-    </style>
+    
+    
 </head>
 
 <body>
@@ -550,99 +483,6 @@
         </div>
     </div>
 
-    <script>
-
-        const messageInput = document.getElementById("message");
-        const messageError = document.getElementById("messageError");
-
-        const gmailInput = document.getElementById("gmail");
-        const gmailError = document.getElementById("gmailError");
-
-        const gnameInput = document.getElementById("gname");
-        const gnameError = document.getElementById("gnameError");
-
-        const nameInput = document.getElementById("name");
-        const nameError = document.getElementById("nameError");
-
-        const emailInput = document.getElementById("email");
-        const emailError = document.getElementById("emailError");
-        const subscribeButton = document.getElementById("subscribeButton");
-
-        function validateMessage(message) {
-            const re = /^[^\s]/;
-            return re.test(message);
-        }
-
-        function validateGmail(gmail) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(gmail);
-        }
-
-        function validateGname(gname) {
-            const re = /^[^\s]/;
-            return re.test(gname);
-        }
-
-        function validateName(name) {
-            const re = /^[^\s]/;
-            return re.test(name);
-        }
-
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        subscribeButton.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            if (validateMessage(messageInput.value)) {
-                messageInput.classList.remove("is-invalid");
-                messageError.style.display = "none"
-                console.log("message nice");
-            } else {
-                messageInput.classList.add("is-invalid");
-                messageError.style.display = "block";
-            }
-
-            if (validateGmail(gmailInput.value)) {
-                gmailInput.classList.remove("is-invalid");
-                gmailError.style.display = "none"
-                console.log("gemail nice");
-            } else {
-                gmailInput.classList.add("is-invalid");
-                gmailError.style.display = "block";
-            }
-
-            if (validateGname(gnameInput.value)) {
-                gnameInput.classList.remove("is-invalid");
-                gnameError.style.display = "none"
-                console.log("gname nice");
-            } else {
-                gnameInput.classList.add("is-invalid");
-                gnameError.style.display = "block";
-            }
-
-            if (validateName(nameInput.value)) {
-                nameInput.classList.remove("is-invalid");
-                nameError.style.display = "none"
-                console.log("name nice");
-            } else {
-                nameInput.classList.add("is-invalid");
-                nameError.style.display = "block";
-            }
-
-            if (validateEmail(emailInput.value)) {
-                emailInput.classList.remove("is-invalid");
-                emailError.style.display = "none";
-                // Здесь можно добавить код для отправки формы, например, через AJAX
-                console.log("Подписка успешна");
-            } else {
-                emailInput.classList.add("is-invalid");
-                emailError.style.display = "emailError";
-            }
-        });
-    </script>
 </body>
 
 </html>
