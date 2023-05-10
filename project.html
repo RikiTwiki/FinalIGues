@@ -61,7 +61,7 @@
             background-color: #0073a7;
         }
 
-        @media (max-width: 1491px) {
+        /* @media (max-width: 1491px) {
             .navbar-collapse {
                 background-color: white;
                 padding: 1.5rem !important
@@ -69,6 +69,55 @@
 
             .col-lg-8 .text-white {
                 font-size: 60px;
+            }
+        } */
+
+        @media (max-width: 1491px) {
+            .navbar-collapse {
+                background-color: white;
+                padding: 1.5rem !important
+            }
+
+            .now-shadow:hover {
+                box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+                transition-duration: 1s;
+            }
+
+            .col-lg-8 .text-white {
+                font-size: 60px;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .carousel-inner .row {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+
+            .carousel-inner .col-12 {
+                flex: 0 0 auto;
+                max-width: 100%;
+                margin-bottom: 80px;
+            }
+
+            .carousel-inner .carousel-item {
+                width: 100%;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none;
+            }
+
+            .carousel-indicators {
+                display: none;
             }
         }
     </style>
@@ -214,7 +263,7 @@
                     <div class="container-xxl py-5">
                         <div class="container">
                             <div class="row g-5">
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
@@ -236,7 +285,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
@@ -259,7 +308,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
@@ -293,7 +342,7 @@
                                         <h1 class="display-5 mb-5">Стипендиальные Программы №2</h1>
                                     </div> -->
                             <div class="row g-5">
-                                <div class="col-lg-4 col-md-6">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
@@ -316,7 +365,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kazahsztan.jpg" alt="">
@@ -336,7 +385,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+                                <div class="col-lg-4 col-md-6 col-12" data-wow-delay="0.1s">
                                     <div class="service-item rounded d-flex h-100">
                                         <div class="service-img rounded">
                                             <img class="img-fluid" src="img/kyrgyzstan.jpg" alt="">
