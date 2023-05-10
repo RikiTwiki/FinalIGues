@@ -34,6 +34,10 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/test.css" rel="stylesheet">
+
+    <script src="js/test.js"></script>
+
 
     <!-- Bootstrap CSS -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -43,130 +47,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
-    <style>
-        .dropdown-item {
-            /* transition: 0.9s; */
-            transition: 0.6s;
-            /* Время эффекта */
-            text-align: left;
-        }
 
-        .dropdown-item:hover {
-            transform: scale(1.06);
-        }
-
-
-        .blue-stripe {
-            width: 40%;
-            height: 5px;
-            background-color: #0097d2;
-        }
-
-        .dropdown-list {
-            position: absolute;
-            display: none;
-            z-index: 10;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-            margin-top: 10px;
-            border-radius: 0.3rem;
-        }
-
-        .dropdown-list ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .dropdown-list li {
-            margin-bottom: 5px;
-        }
-
-        .dropdown-list a {
-            text-decoration: none;
-            color: #333;
-            padding: 4px 6px;
-            display: inline-block;
-            border-radius: 4px;
-        }
-
-        .dropdown-list a:hover {
-            background-color: #0097d2;
-            color: white;
-        }
-
-
-        .carousel-indicators li {
-            background-color: #0097d2;
-        }
-
-        .carousel-indicators .active {
-            background-color: #0073a7;
-        }
-
-        .service-text {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        @media (max-width: 1491px) {
-
-            .navbar-nav button {
-                width: 20% !important;
-            }
-
-            .navbar-collapse {
-                background-color: white;
-                padding: 1.5rem !important
-            }
-
-            .now-shadow:hover {
-                box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-                transition-duration: 1s;
-            }
-
-            .col-lg-8 .text-white {
-                font-size: 60px;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-
-            .carousel-inner .row {
-                display: flex;
-                flex-wrap: nowrap;
-                overflow-x: auto;
-            }
-
-            .carousel-inner .col-12 {
-                flex: 0 0 auto;
-                max-width: 100%;
-                margin-bottom: 80px;
-            }
-
-            .carousel-inner .carousel-item {
-                width: 100%;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                display: none;
-            }
-
-            .carousel-indicators {
-                display: none;
-            }
-        }
-    </style>
 
 
 </head>
@@ -791,31 +672,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var buttons = document.querySelectorAll('.dop-info');
 
-            buttons.forEach(function (button) {
-                button.addEventListener('click', function (e) {
-                    e.preventDefault(); // Отключите переход по ссылке
-                    var dropdown = this.parentElement.querySelector('.dropdown-list');
-                    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
-                });
-            });
-        });
-
-        // Закройте выпадающий список при клике вне его
-        document.addEventListener('click', function (e) {
-            if (!e.target.classList.contains('dop-info')) {
-                var dropdowns = document.querySelectorAll('.dropdown-list');
-                dropdowns.forEach(function (dropdown) {
-                    dropdown.style.display = 'none';
-                });
-            }
-        });
-
-
-    </script>
     <!-- Modal -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -856,49 +713,7 @@
         </div>
     </div>
 
-    <script>
-        const nameInput = document.getElementById("name");
-        const nameError = document.getElementById("nameError");
 
-        const emailInput = document.getElementById("email");
-        const emailError = document.getElementById("emailError");
-        const subscribeButton = document.getElementById("subscribeButton");
-
-        function validateName(name) {
-            const ren = /^[^\s]/;
-            return ren.test(name);
-        }
-
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        subscribeButton.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            if (validateName(nameInput.value)) {
-                nameInput.classList.remove("is-invalid");
-                nameError.style.display = "none"
-                console.log("name nice");
-            } else {
-                nameInput.classList.add("is-invalid");
-                nameError.style.display = "block";
-                name.style.display = "block";
-            }
-
-            if (validateEmail(emailInput.value)) {
-                emailInput.classList.remove("is-invalid");
-                emailError.style.display = "none";
-                // Здесь можно добавить код для отправки формы, например, через AJAX
-                console.log("Подписка успешна");
-            } else {
-                emailInput.classList.add("is-invalid");
-                emailError.style.display = "emailError";
-                nameError.style.display = "emailError";
-            }
-        });
-    </script>
 
 
 </body>

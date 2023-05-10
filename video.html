@@ -41,32 +41,12 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/test.css" rel="stylesheet">
 
-    <style>
-        .dropdown-item {
-            transition: 0.9s;
-        }
+    <script src="js/test.js"></script>
+    
 
-        .dropdown-item:hover {
-            color: #497bb4;
-        }
-
-        @media (max-width: 1491px) {
-
-            .navbar-nav button {
-                width: 20% !important;
-            }
-
-            .navbar-collapse {
-                background-color: white;
-                padding: 1.5rem !important
-            }
-
-            .col-lg-8 .text-white {
-                font-size: 60px;
-            }
-        }
-    </style>
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -204,12 +184,14 @@
                         <img class="img-fluid" src="http://img.youtube.com/vi/0_e_9h_6sCY/maxresdefault.jpg" alt="">
                         <div class="">
                             <br>
-                            <h4 class="mb-0"><a href="./one_video.html"> Проектный менеджмент в государственном секторе
-                                </a></h4>
+                            <h4 class="mb-0"><a href="./one_video.html">Классическое управление и государственное
+                                    управление как наука, модель государственного управления Северной Македонии</a></h4>
                             <br>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cum
-                                reiciendis ad et sed nam, cupiditate, nostrum incidunt laudantium inventore quas
-                                repudiandae. Architecto, doloribus!</p>
+                            <p class="mb-3">Дата: 9 марта 2022 года
+                                <br>
+                                Лектор: Яахи Яахия, программа государственного управления Университета Тетова, Северная
+                                Македония
+                            </p>
                             <p class="text-primary">Книги</p>
                         </div>
                     </div>
@@ -219,12 +201,12 @@
                         <img class="img-fluid" src="http://img.youtube.com/vi/pjsotIaBr34/maxresdefault.jpg" alt="">
                         <div class="">
                             <br>
-                            <h4 class="mb-0"><a href="./one_video.html"> Проектный менеджмент в государственном секторе
-                                </a></h4>
+                            <h4 class="mb-0"><a href="./one_video.html"> Первое впечталение </a></h4>
                             <br>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cum
-                                reiciendis ad et sed nam, cupiditate, nostrum incidunt laudantium inventore quas
-                                repudiandae. Architecto, doloribus!</p>
+                            <p class="mb-3">Дата: 1 апреля
+                                <br>
+                                Лектор: эксперт Роберт Гарайссен, Германия
+                            </p>
                             <p class="text-primary">Книги</p>
                         </div>
                     </div>
@@ -234,12 +216,14 @@
                         <img class="img-fluid" src="./img/photo_2023-05-04_15-43-21.jpg " alt="">
                         <div class="">
                             <br>
-                            <h4 class="mb-0"><a href="./one_video.html"> Проектный менеджмент в государственном секторе
-                                </a></h4>
+                            <h4 class="mb-0"><a href="./one_video.html">Государственность и система государственного
+                                    управления в Кыргызской Республике</a></h4>
                             <br>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cum
-                                reiciendis ad et sed nam, cupiditate, nostrum incidunt laudantium inventore quas
-                                repudiandae. Architecto, doloribus!</p>
+                            <p class="mb-3">
+                                Дата: 5 февраля 2022 года
+                                <br>
+                                Лектор: Государственный и общественный деятель Кыргызской Республики, Эмильбек Каптагаев
+                            </p>
                             <p class="text-primary">Книги</p>
                         </div>
                     </div>
@@ -381,49 +365,7 @@
         </div>
     </div>
 
-    <script>
-        const nameInput = document.getElementById("name");
-        const nameError = document.getElementById("nameError");
-
-        const emailInput = document.getElementById("email");
-        const emailError = document.getElementById("emailError");
-        const subscribeButton = document.getElementById("subscribeButton");
-
-        function validateName(name) {
-            const ren = /^[^\s]/;
-            return ren.test(name);
-        }
-
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        subscribeButton.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            if (validateName(nameInput.value)) {
-                nameInput.classList.remove("is-invalid");
-                nameError.style.display = "none"
-                console.log("name nice");
-            } else {
-                nameInput.classList.add("is-invalid");
-                nameError.style.display = "block";
-                name.style.display = "block";
-            }
-
-            if (validateEmail(emailInput.value)) {
-                emailInput.classList.remove("is-invalid");
-                emailError.style.display = "none";
-                // Здесь можно добавить код для отправки формы, например, через AJAX
-                console.log("Подписка успешна");
-            } else {
-                emailInput.classList.add("is-invalid");
-                emailError.style.display = "emailError";
-                nameError.style.display = "emailError";
-            }
-        });
-    </script>
+    
 
 </body>
 

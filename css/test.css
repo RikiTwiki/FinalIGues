@@ -1,0 +1,404 @@
+.dropdown-item {
+    /* transition: 0.9s; */
+    transition: 0.6s;
+    /* Время эффекта */
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    transform: scale(1.06);
+}
+
+
+.blue-stripe {
+    width: 40%;
+    height: 5px;
+    background-color: #0097d2;
+}
+
+.dropdown-list {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    border-radius: 0.3rem;
+}
+
+.dropdown-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list li {
+    margin-bottom: 5px;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    color: #333;
+    padding: 4px 6px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.dropdown-list a:hover {
+    background-color: #0097d2;
+    color: white;
+}
+
+
+.carousel-indicators li {
+    background-color: #0097d2;
+}
+
+.carousel-indicators .active {
+    background-color: #0073a7;
+}
+
+.service-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1491px) {
+
+    .navbar-nav button {
+        width: 20% !important;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 1.5rem !important
+    }
+
+    .now-shadow:hover {
+        box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+        transition-duration: 1s;
+    }
+
+    .col-lg-8 .text-white {
+        font-size: 60px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel-inner .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .carousel-inner .col-12 {
+        flex: 0 0 auto;
+        max-width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .carousel-inner .carousel-item {
+        width: 100%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-item {
+    transition: 0.9s;
+}
+
+.dropdown-item:hover {
+    color: #497bb4;
+}
+
+@media (max-width: 991px) {
+
+    .navbar-nav button {
+        width: 20% !important;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+    }
+}
+
+.bottom-navbar {
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    right: 0;
+}
+
+/* a {
+    color: black !important;
+  } */
+
+.bg-primary {
+    background-color: #0097d2 !important;
+}
+
+a .bg:hover {
+    background-color: #e9e8f5 !important;
+    transition: 1s !important;
+}
+
+a .bg-primary {
+    color: white !important;
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    padding: 0;
+}
+
+.custom-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
+}
+
+.custom-container>a {
+    flex: 0 0 auto;
+    text-decoration: none;
+}
+
+.bg {
+    background-color: white;
+}
+
+.bg-primary {
+    background-color: blue;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .custom-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: visible;
+    }
+}
+
+
+
+
+
+
+
+.dropdown-item {
+    transition: 0.9s;
+}
+
+.dropdown-item:hover {
+    color: #497bb4;
+}
+
+@media (max-width: 1491px) {
+
+    .navbar-nav button {
+        width: 20% !important;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 1.5rem !important
+    }
+
+    .col-lg-8 .text-white {
+        font-size: 60px;
+    }
+}
+
+/* #kazakhstan-section.active {
+    background-color: #267a8c; 
+}
+
+#kazakhstan-section.active .elementor-heading-title {
+    color: #fff; 
+} */
+
+/* #kyrgyzstan-section.active {
+    background-color: #267a8c;
+}
+
+#kyrgyzstan-section.active .elementor-heading-title {
+    color: #fff;
+} */
+
+/* body {
+    font-family: Arial, sans-serif;
+} */
+
+.elementor-widget-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elementor-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Добавлено: рамка для видимого блока */
+    border-radius: 5px;
+    /* Добавлено: скругление углов */
+    transition: background-color 0.3s;
+    /* Добавлено: плавное изменение фона */
+}
+
+.elementor-section:hover {
+    background-color: #f0f0f0;
+    color: #267a8c
+        /* Добавлено: серый фон при наведении */
+}
+
+.elementor-widget-heading {
+    margin-bottom: 20px;
+}
+
+.elementor-heading-title {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* .elementor-heading-title:hover {
+    color: #267a8c;
+    text-decoration: underline;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: var(--dark);
+    border: 0px solid var(--dark) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0097d2 !important;
+    background-color: #fff !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125) !important;
+}
+
+.accordion-button:focus {
+    z-index: 3 !important;
+    border-color: #0097d2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 151, 210, 0.25) !important;
+}
+
+@media (max-width: 1491px) {
+
+    .navbar-nav button {
+        width: 20% !important;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 1.5rem !important
+    }
+
+    .now-shadow:hover {
+        box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+        transition-duration: 1s;
+    }
+
+    .col-lg-8 .text-white {
+        font-size: 60px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel-inner .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .carousel-inner .col-12 {
+        flex: 0 0 auto;
+        max-width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .carousel-inner .carousel-item {
+        width: 100%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}

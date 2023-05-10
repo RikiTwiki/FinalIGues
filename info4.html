@@ -33,103 +33,14 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
 
-    <style>
-        .dropdown-item {
-            transition: 0.9s;
-        }
+    <link href="css/test.css" rel="stylesheet">
 
-        .dropdown-item:hover {
-            color: #497bb4;
-        }
 
-        @media (max-width: 991px) {
-
-            .navbar-nav button {
-                width: 20% !important;
-            }
-
-            .navbar-collapse {
-                background-color: white;
-            }
-        }
-
-        .bottom-navbar {
-            position: absolute;
-            bottom: -40%;
-            left: 0;
-            right: 0;
-        }
-
-        /* a {
-      color: black !important;
-    } */
-
-        .bg-primary {
-            background-color: #0097d2 !important;
-        }
-
-        a .bg:hover {
-            background-color: #e9e8f5 !important;
-            transition: 1s !important;
-        }
-
-        a .bg-primary {
-            color: white !important;
-        }
-
-        .custom-container {
-            display: flex;
-            flex-direction: row;
-            overflow-x: auto;
-            scrollbar-width: none;
-            /* Firefox */
-            -ms-overflow-style: none;
-            /* Internet Explorer 10+ */
-            padding: 0;
-        }
-
-        .custom-container::-webkit-scrollbar {
-            display: none;
-            /* Chrome, Safari, and Opera */
-        }
-
-        .custom-container>a {
-            flex: 0 0 auto;
-            text-decoration: none;
-        }
-
-        .bg {
-            background-color: white;
-        }
-
-        .bg-primary {
-            background-color: blue;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .p-2 {
-            padding: 0.5rem;
-        }
-
-        .px-5 {
-            padding-left: 1.25rem;
-            padding-right: 1.25rem;
-        }
-
-        @media (min-width: 768px) {
-            .custom-container {
-                display: flex;
-                flex-direction: row;
-                overflow-x: visible;
-            }
-        }
-    </style>
+    <script src="js/test.js"></script>
+    
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -138,10 +49,10 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script> -->
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 
 </head>
 
@@ -595,49 +506,7 @@
         </div>
     </div>
 
-    <script>
-        const nameInput = document.getElementById("name");
-        const nameError = document.getElementById("nameError");
-
-        const emailInput = document.getElementById("email");
-        const emailError = document.getElementById("emailError");
-        const subscribeButton = document.getElementById("subscribeButton");
-
-        function validateName(name) {
-            const ren = /^[^\s]/;
-            return ren.test(name);
-        }
-
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        subscribeButton.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            if (validateName(nameInput.value)) {
-                nameInput.classList.remove("is-invalid");
-                nameError.style.display = "none"
-                console.log("name nice");
-            } else {
-                nameInput.classList.add("is-invalid");
-                nameError.style.display = "block";
-                name.style.display = "block";
-            }
-
-            if (validateEmail(emailInput.value)) {
-                emailInput.classList.remove("is-invalid");
-                emailError.style.display = "none";
-                // Здесь можно добавить код для отправки формы, например, через AJAX
-                console.log("Подписка успешна");
-            } else {
-                emailInput.classList.add("is-invalid");
-                emailError.style.display = "emailError";
-                nameError.style.display = "emailError";
-            }
-        });
-    </script>
+    
 </body>
 
 </html>
