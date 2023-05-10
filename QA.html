@@ -54,6 +54,60 @@
             outline: 0 !important;
             box-shadow: 0 0 0 0.25rem rgba(0, 151, 210, 0.25) !important;
         }
+
+        @media (max-width: 1491px) {
+
+            .navbar-nav button {
+                width: 20% !important;
+            }
+
+            .navbar-collapse {
+                background-color: white;
+                padding: 1.5rem !important
+            }
+
+            .now-shadow:hover {
+                box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+                transition-duration: 1s;
+            }
+
+            .col-lg-8 .text-white {
+                font-size: 60px;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .carousel-inner .row {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+
+            .carousel-inner .col-12 {
+                flex: 0 0 auto;
+                max-width: 100%;
+                margin-bottom: 80px;
+            }
+
+            .carousel-inner .carousel-item {
+                width: 100%;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none;
+            }
+
+            .carousel-indicators {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -339,8 +393,9 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea type="text" class="form-control border-0" placeholder="Leave a message here"
-                                        id="message" style="height: 100px"></textarea>
+                                    <textarea type="text" class="form-control border-0"
+                                        placeholder="Leave a message here" id="message"
+                                        style="height: 100px"></textarea>
                                     <label for="message">Введите ваш вопрос</label>
                                     <div class="invalid-feedback" id="messageError">
                                         Пожалуйста, введите ваш вопрос.
